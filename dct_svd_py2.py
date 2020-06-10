@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 #!/usr/bin/env python3
-# -*- coding: utf-8 -*-
+
 
 
 # Trabalho da disciplina de álgebra linear computacional do Programa de Pós-Graduação em Modelagem Computacional da Universidade Federal de Juiz de Fora
@@ -15,24 +15,24 @@ import numpy as np
 import matplotlib.pyplot as plt
 from scipy import fftpack
 import math
-import urllib2
+#import urllib2
 import IPython
 from sklearn.metrics import mean_squared_error
 from skimage import data
 from skimage.color import rgb2gray
 from numpy.linalg import svd
 from skimage import img_as_ubyte,img_as_float
+import glob
 
 #==============================================================================
-# URL das imagens de teste
-image_url = [
-['Barco','https://goo.gl/poadfy'], 
-['Tabuleiro','https://goo.gl/aaBxbS'],
-['Ressonancia','https://goo.gl/rr3anu'],
-['Lena','https://goo.gl/zVqVy8'],]
+
+def load_images():
+    list_of_images = glob.glob('./benchmarks/gray8bit/*.png')
+    return list_of_images
+
 
 # Abertura da imagem da URL passada como parametro
-def get_image_from_url(image_url='https://goo.gl/aaBxbS', size=(256, 256)):
+def get_image(image_url='https://goo.gl/aaBxbS', size=(256, 256)):
     file_descriptor = urllib2.urlopen(image_url)
     image_file = io.BytesIO(file_descriptor.read())
     image = Image.open(image_file)
@@ -80,7 +80,7 @@ colors = ['b', 'r', 'g', 'y']
 # Loop no vetor de imagens
 # Aplica SVD e DCT, mostra os resultados para cada imagem
 for j in range(len(image_url)):
-    pixels = get_image_from_url(image_url=image_url[j][1], size=(256,256))
+    pixels = get_image(image_url=image_url[j][1], size=(256,256))
     dct_size = pixels.shape[0]
     dct = get_2D_dct(pixels)
     reconstructed_images = []
