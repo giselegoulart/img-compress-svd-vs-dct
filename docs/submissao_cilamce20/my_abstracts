@@ -1,0 +1,19 @@
+Title:
+	
+A COMPARATIVE STUDY OF SINGULAR VALUE DECOMPOSITION (SVD) AND DISCRETE COSINE TRANSFORM (DCT) TECHNIQUES FOR IMAGE COMPRESSION APPLICATIONS
+MS:
+	
+Computational Methods for Image Processing and Analysis
+Abstract:
+	
+The demand for methods capable of extracting knowledge from data and organizing large amounts of information has been growing in recent decades. Present in several applications in biomechanics and biomedicine, images sometimes require the use of computational methods to reduce the process complexity without compromising quality. This paper proposes the application of computational methods for image compression and pattern recognition, considering data storage and transfer issues. In particular, we present a comparative study between the Singular Value Decomposition ​​(SVD) and Discrete Cosine Transform (DCT) techniques for image compression. The DCT method is one of the steps of the JPEG file compression process. Its application makes it possible to detect spatial redundancy in the image, identifying the similarity between neighboring pixels. The SVD consists of the factorization of a real or complex rectangular matrix, capable of dividing the system into linearly independent parts. The SVD factorization allows the identification of the most representative components of a matrix, which is explored in image compression. During the analysis, the perceptible quality of the compressed image is of great importance, so we propose an automatic way of obtaining some metrics for compression without excessive loss of information. The computational experiments in this work consisted of fixing error metrics and evaluating the performances of DCT and SVD. We also analyzed the coupling of these techniques in matrix compressions, proving a distinguished approach in comparison with the literature. This approach allowed us to analyze the reconstructions of the images and the process of pattern recognition of the SVD and DCT. The results demonstrate that DCT presents, in most tests, better performance in reducing memory usage in compression compared to SVD, despite resulting in lower image quality. Since the SVD factorization demands higher storage than DCT, image compression applications generally apply the DCT method. However, in medical applications, for example, where precision in the smallest details is essential for a correct diagnosis, the use of SVD combined with DCT can be more effective, generating compressed images with higher quality.
+Presenter Name:
+	
+Ruan M. Carvalho
+Authors Data:
+	
+> Ruan M. Carvalho - - Graduate Program in Computational Modeling, Federal University of Juiz de Fora
+> Gisele G. T. da Silva - - Graduate Program in Computational Modeling, Federal University of Juiz de Fora
+> Priscila V. Z. C. Goliatt - - Dept. of Computer Science and Graduate Program in Computational Modeling, Federal University of Juiz de Fora
+> Bernardo M. Rocha - - Dept. of Computer Science and Graduate Program in Computational Modeling, Federal University of Juiz de Fora
+> Carlos C. H. Borges - - Dept. of Computer Science and Graduate Program in Computational Modeling, Federal University of Juiz de Fora
