@@ -32,12 +32,12 @@ def load_images():
 
 
 # Abertura da imagem da URL passada como parametro
-def get_image(image_url='https://goo.gl/aaBxbS', size=(256, 256)):
-    file_descriptor = urllib2.urlopen(image_url)
-    image_file = io.BytesIO(file_descriptor.read())
-    image = Image.open(image_file)
-    img_color = image.resize(size, 1)
-    img_grey = img_color.convert('L')
+def get_image(list_images, k):
+    #file_descriptor = urllib2.urlopen(image_url)
+    #image_file = io.BytesIO(file_descriptor.read())
+    image = Image.open(k)
+    #img_color = image.resize(size, 1)
+    img_grey = image.convert('L')
     img = np.array(img_grey, dtype=np.float)
     return img
 
@@ -77,10 +77,11 @@ def compress_show_gray_images(k):
 
 #     
 colors = ['b', 'r', 'g', 'y']
+list_images = load_images()
 # Loop no vetor de imagens
 # Aplica SVD e DCT, mostra os resultados para cada imagem
-for j in range(len(image_url)):
-    pixels = get_image(image_url=image_url[j][1], size=(256,256))
+for j in list_images:
+    pixels = get_image(list_images, j)
     dct_size = pixels.shape[0]
     dct = get_2D_dct(pixels)
     reconstructed_images = []
@@ -133,9 +134,9 @@ for j in range(len(image_url)):
             plt.yticks([]);
             plt.show()
             
-    print '**'+image_url[j][0]+'**'
+    print('**'+image_url[j][0]+'**')
     # Plot CMAP DCT
-    print '**Distribuicao das frequencias da DCT**'
+    print('**Distribuicao das frequencias da DCT**')
     plt.matshow(np.abs(dct[:50,:50]), cmap=plt.cm.Paired)
     plt.show()
     
@@ -146,7 +147,7 @@ for j in range(len(image_url)):
     plt.show()
     
     # Plot taxa de compressao X RMSE
-    print '**Fixando RMSE em 20**'
+    print('**Fixando RMSE em 20**')
     plt.figure()
     plt.grid()
     plt.plot(compress_r_svd, rmse_svd, '-o')
