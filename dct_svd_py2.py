@@ -64,7 +64,7 @@ def compress_svd(image,k):
     soma = np.sum(np.diag(s[:k]))
     return reconst_matrix, rmse, soma
     
-# Compressao da imagem
+# Compressao da imagem svd
 def compress_show_gray_images(k):
     rmse_svd = []
     image=pixels
@@ -94,8 +94,10 @@ for j in list_images:
     k_svd=[]
     k_dct=[]
     
-     # Calculo da transformada DCT 
+    # Calculo das compressões (busca por erro fixado DCT e SVD)
     for i in range(1,257): 
+        
+        #Calculo Transformada DCT
         dct_copy = dct.copy()
         dct_copy[i-1:,:] = 0
         dct_copy[:,i-1:] = 0 
@@ -103,12 +105,13 @@ for j in list_images:
         reconstructed_image_dct = get_reconstructed_image(r_img);
         rmse = math.sqrt(((pixels - r_img) ** 2).mean(axis=None))
     
-        # Criacao da lista de imagens
-        reconstructed_images.append(reconstructed_image_dct);          
+        reconstructed_images.append(reconstructed_image_dct);                  # Criacao da lista de imagens
         
+        #Calculo Fatoração SVD
         compression_ratio_svd, rmse2, image_svd, soma = compress_show_gray_images(i)
         soma_svd.append(soma)
-        # Fixacao do erro em 20
+        
+        # Análise de erro máximo na compressão
         if(rmse2<=20):
             k_svd.append(i)
             rmse_svd.append(rmse2)
