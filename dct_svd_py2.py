@@ -82,6 +82,7 @@ list_images = load_images()
 # Aplica SVD e DCT, mostra os resultados para cada imagem
 for j in list_images:
     pixels = get_image(list_images, j)
+    
     dct_size = pixels.shape[0]
     dct = get_2D_dct(pixels)
     reconstructed_images = []
