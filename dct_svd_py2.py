@@ -65,7 +65,7 @@ def compress_svd(image,k):
     return reconst_matrix, rmse, soma
     
 # Compressao da imagem svd
-def compress_show_gray_images(k):
+def compress_show_gray_images(k, pixels):
     rmse_svd = []
     image=pixels
     original_shape = image.shape
@@ -83,32 +83,19 @@ list_images = load_images()
 for j in list_images:
     pixels = get_image(list_images, j)
     
-    dct_size = pixels.shape[0]
-    dct = get_2D_dct(pixels)
-    reconstructed_images = []
-    rmse_dct = []
-    compress_r_svd = []   
-    compress_r_dct = [] 
-    rmse_svd = []
-    soma_svd=[]
-    k_svd=[]
-    k_dct=[]
-    
-    # Calculo das compressões (busca por erro fixado DCT e SVD)
+    # Calculo das compressões (busca por erro fixado SVD)
     for i in range(1,257): 
-        
-        #Calculo Transformada DCT
-        dct_copy = dct.copy()
-        dct_copy[i-1:,:] = 0
-        dct_copy[:,i-1:] = 0 
-        r_img = get_2d_idct(dct_copy);
-        reconstructed_image_dct = get_reconstructed_image(r_img);
-        rmse = math.sqrt(((pixels - r_img) ** 2).mean(axis=None))
-    
-        reconstructed_images.append(reconstructed_image_dct);                  # Criacao da lista de imagens
+        reconstructed_images = []
+        rmse_dct = []
+        compress_r_svd = []   
+        compress_r_dct = [] 
+        rmse_svd = []
+        soma_svd=[]
+        k_svd=[]
+        k_dct=[]
         
         #Calculo Fatoração SVD
-        compression_ratio_svd, rmse2, image_svd, soma = compress_show_gray_images(i)
+        compression_ratio_svd, rmse2, image_svd, soma = compress_show_gray_images(i, pixels)
         soma_svd.append(soma)
         
         # Análise de erro máximo na compressão
@@ -116,27 +103,43 @@ for j in list_images:
             k_svd.append(i)
             rmse_svd.append(rmse2)
             compress_r_svd.append(compression_ratio_svd)
-        if(rmse<=20):   
-            k_dct.append(i)
-            rmse_dct.append(rmse)    
-            compression_ratio_dct =(dct_size**2)/(i*i)
-            compress_r_dct.append(compression_ratio_dct)
+            
+#        if(rmse<=20):   
+#            k_dct.append(i)
+#            rmse_dct.append(rmse)    
+#            compression_ratio_dct =(dct_size**2)/(i*i)
+#            compress_r_dct.append(compression_ratio_dct)
         
         # Plot das imagens comprimidas
-        if((i%50)==0):
-            plt.close()
-            plt.title('DCT - r= '+str(i))
-            plt.imshow(reconstructed_images[i-1], cmap=plt.cm.gray)
-            plt.grid(False);
-            plt.xticks([]);
-            plt.yticks([]);
-            plt.show()
-            plt.title('SVD - r='+str(i))
-            plt.imshow(image_svd, cmap=plt.cm.gray)
-            plt.grid(False);
-            plt.xticks([]);
-            plt.yticks([]);
-            plt.show()
+#        if((i%50)==0):
+#            plt.close()
+#            plt.title('DCT - r= '+str(i))
+#            plt.imshow(reconstructed_images[i-1], cmap=plt.cm.gray)
+#            plt.grid(False);
+#            plt.xticks([]);
+#            plt.yticks([]);
+#            plt.show()
+#            plt.title('SVD - r='+str(i))
+#            plt.imshow(image_svd, cmap=plt.cm.gray)
+#            plt.grid(False);
+#            plt.xticks([]);
+#            plt.yticks([]);
+#            plt.show()        
+        
+        
+    dct_size = pixels.shape[0]
+    dct = get_2D_dct(pixels)
+    #Calculo Transformada DCT
+    dct_copy = dct.copy()
+    dct_copy[i-1:,:] = 0
+    dct_copy[:,i-1:] = 0 
+    r_img = get_2d_idct(dct_copy);
+    reconstructed_image_dct = get_reconstructed_image(r_img);
+    rmse = math.sqrt(((pixels - r_img) ** 2).mean(axis=None))
+    
+    reconstructed_images.append(reconstructed_image_dct);                  # Criacao da lista de imagens
+        
+
             
     print('**'+image_url[j][0]+'**')
     # Plot CMAP DCT
