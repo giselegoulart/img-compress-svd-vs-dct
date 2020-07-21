@@ -72,6 +72,21 @@ def compress_show_gray_images(k, pixels):
     reconst_img, rmse, soma = compress_svd(image,k)
     compression_ratio =(original_shape[0]*original_shape[1])/(k*(original_shape[0] + original_shape[1]+1)) 
     return compression_ratio, rmse, reconst_img, soma
+    
+def r_definition(image):
+    U,s,V = svd(image,full_matrices=False)
+    soma_total = np.sum(np.diag(s))
+    r_search = 0
+    for k in range(1,257):
+        reconst_matrix = np.dot(U[:,:k],np.dot(np.diag(s[:k]),V[:k,:]))
+        rmse = math.sqrt(((pixels - reconst_matrix) ** 2).mean(axis=None))
+        soma_parcial = np.sum(np.diag(s[:k]))  
+        if(soma_parcial>=(0.6*soma_total)):
+            r_search = k
+            break
+        else:
+            continue
+    return r_search
 
 #==============================================================================    
 
@@ -83,26 +98,39 @@ list_images = load_images()
 for j in list_images:
     pixels = get_image(list_images, j)
     
+    r_min = r_definition(pixels)
+    # Fatoracao SVD
+    compression_ratio_svd, rmse_svd, image_svd, soma = compress_show_gray_images(r_min, pixels)
+    dct_size = pixels.shape[0]
+    dct = get_2D_dct(pixels)
+    
+    #Calculo Transformada DCT
+    dct_copy = dct.copy()
+    dct_copy[r_min-1:,:] = 0
+    dct_copy[:,r_min-1:] = 0 
+    r_img = get_2d_idct(dct_copy);
+    reconstructed_image_dct = get_reconstructed_image(r_img);
+    rmse_dct = math.sqrt(((pixels - r_img) ** 2).mean(axis=None))
+    
+    
+    
     # Calculo das compressões (busca por erro fixado SVD)
-    for i in range(1,257): 
-        reconstructed_images = []
-        rmse_dct = []
-        compress_r_svd = []   
-        compress_r_dct = [] 
-        rmse_svd = []
-        soma_svd=[]
-        k_svd=[]
-        k_dct=[]
+#    for i in range(1,257): 
+#        reconstructed_images = []
+#        rmse_dct = []
+#        compress_r_svd = []   
+#        compress_r_dct = [] 
+#        rmse_svd = []
+#        soma_svd=[]
+#        k_svd=[]
+#        k_dct=[]
         
-        #Calculo Fatoração SVD
-        compression_ratio_svd, rmse2, image_svd, soma = compress_show_gray_images(i, pixels)
-        soma_svd.append(soma)
         
         # Análise de erro máximo na compressão
-        if(rmse2<=20):
-            k_svd.append(i)
-            rmse_svd.append(rmse2)
-            compress_r_svd.append(compression_ratio_svd)
+#        if(rmse2<=20):
+#            k_svd.append(i)
+#            rmse_svd.append(rmse2)
+#            compress_r_svd.append(compression_ratio_svd)
             
 #        if(rmse<=20):   
 #            k_dct.append(i)
@@ -127,18 +155,6 @@ for j in list_images:
 #            plt.show()        
         
         
-    dct_size = pixels.shape[0]
-    dct = get_2D_dct(pixels)
-    #Calculo Transformada DCT
-    dct_copy = dct.copy()
-    dct_copy[i-1:,:] = 0
-    dct_copy[:,i-1:] = 0 
-    r_img = get_2d_idct(dct_copy);
-    reconstructed_image_dct = get_reconstructed_image(r_img);
-    rmse = math.sqrt(((pixels - r_img) ** 2).mean(axis=None))
-    
-    reconstructed_images.append(reconstructed_image_dct);                  # Criacao da lista de imagens
-        
 
             
     print('**'+image_url[j][0]+'**')
@@ -148,27 +164,27 @@ for j in list_images:
     plt.show()
     
     # Plot soma dos valores singulares
-    plt.xlim(0,256)
-    plt.title(str(image_url[j][0]))
-    plt.plot(soma_svd, colors[j])
-    plt.show()
-    
+#    plt.xlim(0,256)
+#    plt.title(str(image_url[j][0]))
+#    plt.plot(soma_svd, colors[j])
+#    plt.show()
+#    
     # Plot taxa de compressao X RMSE
-    print('**Fixando RMSE em 20**')
-    plt.figure()
-    plt.grid()
-    plt.plot(compress_r_svd, rmse_svd, '-o')
-    plt.title('SVD - Posicoes em Memoria='+str(np.min(k_svd)*(256+256+1)))
-    plt.xlabel("Taxa de Compressao")
-    plt.ylabel("RMSE")
-    plt.show()
-    plt.figure()
-    plt.grid()
-    plt.plot(compress_r_dct, rmse_dct, '-o')
-    plt.title('DCT - Posicoes em Memoria='+str(np.min(k_dct)**2))
-    plt.xlabel("Taxa de Compressao")
-    plt.ylabel("RMSE")
-    plt.show()
+#    print('**Fixando RMSE em 20**')
+#    plt.figure()
+#    plt.grid()
+#    plt.plot(compress_r_svd, rmse_svd, '-o')
+#    plt.title('SVD - Posicoes em Memoria='+str(np.min(k_svd)*(256+256+1)))
+#    plt.xlabel("Taxa de Compressao")
+#    plt.ylabel("RMSE")
+#    plt.show()
+#    plt.figure()
+#    plt.grid()
+#    plt.plot(compress_r_dct, rmse_dct, '-o')
+#    plt.title('DCT - Posicoes em Memoria='+str(np.min(k_dct)**2))
+#    plt.xlabel("Taxa de Compressao")
+#    plt.ylabel("RMSE")
+#    plt.show()
 
 #leg = ['Barco', 'Tabuleiro', 'Ressonancia', 'Lena']
 #plt.legend(leg, loc='best')
