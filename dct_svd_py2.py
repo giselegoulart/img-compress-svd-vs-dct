@@ -73,11 +73,11 @@ def compress_show_gray_images(k, pixels):
     compression_ratio =(original_shape[0]*original_shape[1])/(k*(original_shape[0] + original_shape[1]+1)) 
     return compression_ratio, rmse, reconst_img, soma
     
-def r_definition(image):
+def r_definition(image, size):
     U,s,V = svd(image,full_matrices=False)
     soma_total = np.sum(np.diag(s))
     r_search = 0
-    for k in range(1,257):
+    for k in range(1,size):
         reconst_matrix = np.dot(U[:,:k],np.dot(np.diag(s[:k]),V[:k,:]))
         rmse = math.sqrt(((pixels - reconst_matrix) ** 2).mean(axis=None))
         soma_parcial = np.sum(np.diag(s[:k]))  
@@ -97,21 +97,34 @@ list_images = load_images()
 # Aplica SVD e DCT, mostra os resultados para cada imagem
 for j in list_images:
     pixels = get_image(list_images, j)
-    
-    r_min = r_definition(pixels)
+    img_size = pixels.shape[0]
+    r_min = r_definition(pixels,img_size)
     # Fatoracao SVD
-    compression_ratio_svd, rmse_svd, image_svd, soma = compress_show_gray_images(r_min, pixels)
-    dct_size = pixels.shape[0]
+    compression_ratio_svd, rmse_svd, reconstructed_image_svd, soma = compress_show_gray_images(r_min, pixels)
+    
     dct = get_2D_dct(pixels)
     
     #Calculo Transformada DCT
     dct_copy = dct.copy()
     dct_copy[r_min-1:,:] = 0
     dct_copy[:,r_min-1:] = 0 
-    r_img = get_2d_idct(dct_copy);
-    reconstructed_image_dct = get_reconstructed_image(r_img);
-    rmse_dct = math.sqrt(((pixels - r_img) ** 2).mean(axis=None))
+    rec_img_comp = get_2d_idct(dct_copy);
+    reconstructed_image_dct = get_reconstructed_image(rec_img_comp);
+    rmse_dct = math.sqrt(((pixels - rec_img_comp) ** 2).mean(axis=None))
     
+    plt.title('SVD - r='+str(r_min))
+    plt.imshow(reconstructed_image_svd, cmap=plt.cm.gray)
+    plt.grid(False);
+    plt.xticks([]);
+    plt.yticks([]);
+    plt.show() 
+    
+    plt.title('DCT - r='+str(r_min))
+    plt.imshow(reconstructed_image_dct, cmap=plt.cm.gray)
+    plt.grid(False);
+    plt.xticks([]);
+    plt.yticks([]);
+    plt.show() 
     
     
     # Calculo das compressões (busca por erro fixado SVD)
@@ -157,7 +170,7 @@ for j in list_images:
         
 
             
-    print('**'+image_url[j][0]+'**')
+    #print('**'+image_url[j][0]+'**')
     # Plot CMAP DCT
     print('**Distribuicao das frequencias da DCT**')
     plt.matshow(np.abs(dct[:50,:50]), cmap=plt.cm.Paired)
