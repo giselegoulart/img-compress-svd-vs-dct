@@ -12,6 +12,7 @@ import io
 import os
 from PIL import Image
 import numpy as np
+import pandas as pd
 import matplotlib.pyplot as plt
 from scipy import fftpack
 import math
@@ -26,8 +27,8 @@ import glob
 
 #==============================================================================
 
-def load_images():
-    list_of_images = glob.glob('./benchmarks/gray8bit/*.png')
+def load_images(path):
+    list_of_images = glob.glob(path+'*.png')
     return list_of_images
 
 
@@ -73,7 +74,7 @@ def compress_show_gray_images(k, pixels):
     compression_ratio =(original_shape[0]*original_shape[1])/(k*(original_shape[0] + original_shape[1]+1)) 
     return compression_ratio, rmse, reconst_img, soma
     
-def r_definition(image, size):
+def r_definition(image, size, percent):
     U,s,V = svd(image,full_matrices=False)
     soma_total = np.sum(np.diag(s))
     r_search = 0
@@ -81,7 +82,7 @@ def r_definition(image, size):
         reconst_matrix = np.dot(U[:,:k],np.dot(np.diag(s[:k]),V[:k,:]))
         rmse = math.sqrt(((pixels - reconst_matrix) ** 2).mean(axis=None))
         soma_parcial = np.sum(np.diag(s[:k]))  
-        if(soma_parcial>=(0.6*soma_total)):
+        if(soma_parcial>=(percent*soma_total)):
             r_search = k
             break
         else:
@@ -91,41 +92,50 @@ def r_definition(image, size):
 #==============================================================================    
 
 #     
+pastas = [['Escala de Cinza','./benchmarks/gray8bit/'], ['Diversas','./benchmarks/misc/']]
+percentuais=[0.5, 0.6, 0.7, 0.8]
+cols=['percent', 'rmse_dct', 'rmse_svd']
 colors = ['b', 'r', 'g', 'y']
-list_images = load_images()
+
 # Loop no vetor de imagens
 # Aplica SVD e DCT, mostra os resultados para cada imagem
-for j in list_images:
-    pixels = get_image(list_images, j)
-    img_size = pixels.shape[0]
-    r_min = r_definition(pixels,img_size)
-    # Fatoracao SVD
-    compression_ratio_svd, rmse_svd, reconstructed_image_svd, soma = compress_show_gray_images(r_min, pixels)
-    
-    dct = get_2D_dct(pixels)
-    
-    #Calculo Transformada DCT
-    dct_copy = dct.copy()
-    dct_copy[r_min-1:,:] = 0
-    dct_copy[:,r_min-1:] = 0 
-    rec_img_comp = get_2d_idct(dct_copy);
-    reconstructed_image_dct = get_reconstructed_image(rec_img_comp);
-    rmse_dct = math.sqrt(((pixels - rec_img_comp) ** 2).mean(axis=None))
-    
-    plt.title('SVD - r='+str(r_min))
-    plt.imshow(reconstructed_image_svd, cmap=plt.cm.gray)
-    plt.grid(False);
-    plt.xticks([]);
-    plt.yticks([]);
-    plt.show() 
-    
-    plt.title('DCT - r='+str(r_min))
-    plt.imshow(reconstructed_image_dct, cmap=plt.cm.gray)
-    plt.grid(False);
-    plt.xticks([]);
-    plt.yticks([]);
-    plt.show() 
-    
+resultados = []
+for database, path in pastas:
+    list_images = load_images(path)
+    for j in list_images:
+        for p in percentuais:
+            pixels = get_image(list_images, j)
+            img_size = pixels.shape[0]
+            r_min = r_definition(pixels,img_size, p)
+            # Fatoracao SVD
+            compression_ratio_svd, rmse_svd, reconstructed_image_svd, soma = compress_show_gray_images(r_min, pixels)
+            
+            dct = get_2D_dct(pixels)
+            
+            #Calculo Transformada DCT
+            dct_copy = dct.copy()
+            dct_copy[r_min-1:,:] = 0
+            dct_copy[:,r_min-1:] = 0 
+            rec_img_comp = get_2d_idct(dct_copy);
+            reconstructed_image_dct = get_reconstructed_image(rec_img_comp);
+            rmse_dct = math.sqrt(((pixels - rec_img_comp) ** 2).mean(axis=None))
+            
+            resultados.append([p,rmse_svd, rmse_dct])
+            
+            plt.title('SVD - r='+str(r_min))
+            plt.imshow(reconstructed_image_svd, cmap=plt.cm.gray)
+            plt.grid(False);
+            plt.xticks([]);
+            plt.yticks([]);
+            plt.show() 
+            
+            plt.title('DCT - r='+str(r_min))
+            plt.imshow(reconstructed_image_dct, cmap=plt.cm.gray)
+            plt.grid(False);
+            plt.xticks([]);
+            plt.yticks([]);
+            plt.show() 
+    data = pd.DataFrame(data=resultados, columns=cols)
     
     # Calculo das compressões (busca por erro fixado SVD)
 #    for i in range(1,257): 
@@ -172,9 +182,9 @@ for j in list_images:
             
     #print('**'+image_url[j][0]+'**')
     # Plot CMAP DCT
-    print('**Distribuicao das frequencias da DCT**')
-    plt.matshow(np.abs(dct[:50,:50]), cmap=plt.cm.Paired)
-    plt.show()
+#    print('**Distribuicao das frequencias da DCT**')
+#    plt.matshow(np.abs(dct[:50,:50]), cmap=plt.cm.Paired)
+#    plt.show()
     
     # Plot soma dos valores singulares
 #    plt.xlim(0,256)
