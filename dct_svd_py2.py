@@ -24,7 +24,8 @@ from skimage.color import rgb2gray
 from numpy.linalg import svd
 from skimage import img_as_ubyte,img_as_float
 import glob
-
+import seaborn as sns
+import os
 #==============================================================================
 
 def load_images(path):
@@ -62,25 +63,22 @@ def compress_svd(image,k):
     U,s,V = svd(image,full_matrices=False)
     reconst_matrix = np.dot(U[:,:k],np.dot(np.diag(s[:k]),V[:k,:]))
     rmse = math.sqrt(((pixels - reconst_matrix) ** 2).mean(axis=None))
-    soma = np.sum(np.diag(s[:k]))
-    return reconst_matrix, rmse, soma
+    
+    return reconst_matrix, rmse
     
 # Compressao da imagem svd
 def compress_show_gray_images(k, pixels):
-    rmse_svd = []
     image=pixels
     original_shape = image.shape
-    reconst_img, rmse, soma = compress_svd(image,k)
+    reconst_img, rmse = compress_svd(image,k)
     compression_ratio =(original_shape[0]*original_shape[1])/(k*(original_shape[0] + original_shape[1]+1)) 
-    return compression_ratio, rmse, reconst_img, soma
+    return compression_ratio, rmse, reconst_img
     
 def r_definition(image, size, percent):
     U,s,V = svd(image,full_matrices=False)
     soma_total = np.sum(np.diag(s))
     r_search = 0
     for k in range(1,size):
-        reconst_matrix = np.dot(U[:,:k],np.dot(np.diag(s[:k]),V[:k,:]))
-        rmse = math.sqrt(((pixels - reconst_matrix) ** 2).mean(axis=None))
         soma_parcial = np.sum(np.diag(s[:k]))  
         if(soma_parcial>=(percent*soma_total)):
             r_search = k
@@ -92,9 +90,10 @@ def r_definition(image, size, percent):
 #==============================================================================    
 
 #     
-pastas = [['Escala de Cinza','./benchmarks/gray8bit/'], ['Diversas','./benchmarks/misc/']]
-percentuais=[0.5, 0.6, 0.7, 0.8]
-cols=['percent', 'rmse_dct', 'rmse_svd']
+pastas = [['Escala de Cinza','./benchmarks/gray8bit/'],
+          ['Diversas','./benchmarks/misc/']]
+percentuais=[0.5, 0.6, 0.7, 0.8, 0.9]
+cols=['percent', 'rmse', 'meth', 'r', 'CR']
 colors = ['b', 'r', 'g', 'y']
 
 # Loop no vetor de imagens
@@ -108,7 +107,7 @@ for database, path in pastas:
             img_size = pixels.shape[0]
             r_min = r_definition(pixels,img_size, p)
             # Fatoracao SVD
-            compression_ratio_svd, rmse_svd, reconstructed_image_svd, soma = compress_show_gray_images(r_min, pixels)
+            compression_ratio_svd, rmse_svd, reconstructed_image_svd = compress_show_gray_images(r_min, pixels)
             
             dct = get_2D_dct(pixels)
             
@@ -119,8 +118,10 @@ for database, path in pastas:
             rec_img_comp = get_2d_idct(dct_copy);
             reconstructed_image_dct = get_reconstructed_image(rec_img_comp);
             rmse_dct = math.sqrt(((pixels - rec_img_comp) ** 2).mean(axis=None))
+            compression_ratio_dct =(img_size**2)/(r_min*r_min)
             
-            resultados.append([p,rmse_svd, rmse_dct])
+            resultados.append([p,rmse_svd, 'svd', r_min, compression_ratio_svd])
+            resultados.append([p,rmse_dct, 'dct', r_min, compression_ratio_dct])
             
             plt.title('SVD - r='+str(r_min))
             plt.imshow(reconstructed_image_svd, cmap=plt.cm.gray)
@@ -128,6 +129,9 @@ for database, path in pastas:
             plt.xticks([]);
             plt.yticks([]);
             plt.show() 
+            n = j.split('/')[-1]
+            n = n.replace('.png','')
+            plt.imsave(str(database)+'_'+str(n)+'_svd_r'+str(r_min)+'_p'+str(p)+'.png', reconstructed_image_svd)
             
             plt.title('DCT - r='+str(r_min))
             plt.imshow(reconstructed_image_dct, cmap=plt.cm.gray)
@@ -135,8 +139,18 @@ for database, path in pastas:
             plt.xticks([]);
             plt.yticks([]);
             plt.show() 
-    data = pd.DataFrame(data=resultados, columns=cols)
-    
+            plt.imsave(str(database)+'_'+str(n)+'_dct_r'+str(r_min)+'_p'+str(p)+'.png', reconstructed_image_dct)
+            
+            plt.clf()
+    data_results = pd.DataFrame(data=resultados, columns=cols)
+    # SALVAR CSVS!!!!!!
+    sns.set(style="ticks", palette="pastel")
+    sns.boxplot(x="percent", y="rmse",
+            hue="meth", palette=["m", "g"],
+            data=data_results)
+    sns.despine(offset=10, trim=True)
+    plt.savefig(str(database)+'_rmse')
+    plt.clf()
     # Calculo das compressões (busca por erro fixado SVD)
 #    for i in range(1,257): 
 #        reconstructed_images = []
