@@ -93,7 +93,7 @@ def r_definition(image, size, percent):
 pastas = [['Escala de Cinza','./benchmarks/gray8bit/'],
           ['Diversas','./benchmarks/misc/']]
 percentuais=[0.5, 0.6, 0.7, 0.8, 0.9]
-cols=['percent', 'rmse', 'meth', 'r', 'CR']
+cols=['Database','Image_Name','Q_info', 'RMSE', 'Metodo', 'r', 'CR']
 colors = ['b', 'r', 'g', 'y']
 
 # Loop no vetor de imagens
@@ -120,8 +120,8 @@ for database, path in pastas:
             rmse_dct = math.sqrt(((pixels - rec_img_comp) ** 2).mean(axis=None))
             compression_ratio_dct =(img_size**2)/(r_min*r_min)
             
-            resultados.append([p,rmse_svd, 'svd', r_min, compression_ratio_svd])
-            resultados.append([p,rmse_dct, 'dct', r_min, compression_ratio_dct])
+            resultados.append([database, j, p,rmse_svd, 'SVD', r_min, compression_ratio_svd])
+            resultados.append([database, j, p,rmse_dct, 'DCT', r_min, compression_ratio_dct])
             
             plt.title('SVD - r='+str(r_min))
             plt.imshow(reconstructed_image_svd, cmap=plt.cm.gray)
@@ -142,14 +142,24 @@ for database, path in pastas:
             plt.imsave(str(database)+'_'+str(n)+'_dct_r'+str(r_min)+'_p'+str(p)+'.png', reconstructed_image_dct)
             
             plt.clf()
+            
     data_results = pd.DataFrame(data=resultados, columns=cols)
-    # SALVAR CSVS!!!!!!
+    data_results.to_csv('resultados_'+str(database))
+    
     sns.set(style="ticks", palette="pastel")
-    sns.boxplot(x="percent", y="rmse",
-            hue="meth", palette=["m", "g"],
+    sns.boxplot(x="Q_info", y="RMSE",
+            hue="Metodo", palette=["m", "g"],
             data=data_results)
-    sns.despine(offset=10, trim=True)
-    plt.savefig(str(database)+'_rmse')
+    sns.despine(offset=10, trim=False)
+    plt.savefig(str(database)+'_RMSE')
+    plt.clf()
+    
+    sns.set(style="ticks", palette="pastel")
+    sns.boxplot(x="Q_info", y="CR",
+            hue="Metodo", palette=["m", "g"],
+            data=data_results)
+    sns.despine(offset=10, trim=False)
+    plt.savefig(str(database)+'_CR')
     plt.clf()
     # Calculo das compressões (busca por erro fixado SVD)
 #    for i in range(1,257): 

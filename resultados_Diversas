@@ -1,0 +1,561 @@
+,Database,Image_Name,Q_info,RMSE,Metodo,r,CR
+0,Escala de Cinza,./benchmarks/gray8bit/spider_web.png,0.5,20.250887192844573,SVD,6,284.33234811165846
+1,Escala de Cinza,./benchmarks/gray8bit/spider_web.png,0.5,46.976945033119335,DCT,6,225308.44444444444
+2,Escala de Cinza,./benchmarks/gray8bit/spider_web.png,0.6,11.019370747184833,SVD,12,142.16617405582923
+3,Escala de Cinza,./benchmarks/gray8bit/spider_web.png,0.6,35.60333512739889,DCT,12,56327.11111111111
+4,Escala de Cinza,./benchmarks/gray8bit/spider_web.png,0.7,5.8114219212011555,SVD,33,51.69679056575608
+5,Escala de Cinza,./benchmarks/gray8bit/spider_web.png,0.7,12.60849073648179,DCT,33,7448.213039485767
+6,Escala de Cinza,./benchmarks/gray8bit/spider_web.png,0.8,3.0983919235053965,SVD,111,15.3693161141437
+7,Escala de Cinza,./benchmarks/gray8bit/spider_web.png,0.8,5.777259843541426,DCT,111,658.3153964775587
+8,Escala de Cinza,./benchmarks/gray8bit/spider_web.png,0.9,1.2752783487080388,SVD,354,4.819192340875567
+9,Escala de Cinza,./benchmarks/gray8bit/spider_web.png,0.9,3.2798083975236767,DCT,354,64.72520667751922
+10,Escala de Cinza,./benchmarks/gray8bit/cathedral.png,0.5,9.644673146021734,SVD,76,15.803133307415074
+11,Escala de Cinza,./benchmarks/gray8bit/cathedral.png,0.5,15.714055742605415,DCT,76,1566.4930747922438
+12,Escala de Cinza,./benchmarks/gray8bit/cathedral.png,0.6,7.130297380997432,SVD,133,9.03036188995147
+13,Escala de Cinza,./benchmarks/gray8bit/cathedral.png,0.6,13.362225831121057,DCT,133,511.5079427893041
+14,Escala de Cinza,./benchmarks/gray8bit/cathedral.png,0.7,4.952888873924816,SVD,224,5.361777372158686
+15,Escala de Cinza,./benchmarks/gray8bit/cathedral.png,0.7,10.829078885804284,DCT,224,180.3265306122449
+16,Escala de Cinza,./benchmarks/gray8bit/cathedral.png,0.8,3.088708530542309,SVD,384,3.1277034670925667
+17,Escala de Cinza,./benchmarks/gray8bit/cathedral.png,0.8,7.7863893641955855,DCT,384,61.361111111111114
+18,Escala de Cinza,./benchmarks/gray8bit/cathedral.png,0.9,1.5547909827596111,SVD,733,1.6385240537019723
+19,Escala de Cinza,./benchmarks/gray8bit/cathedral.png,0.9,4.304167876417439,DCT,733,16.840218206589004
+20,Escala de Cinza,./benchmarks/gray8bit/leaves_iso_200.png,0.5,21.1795431090956,SVD,101,11.891466647163819
+21,Escala de Cinza,./benchmarks/gray8bit/leaves_iso_200.png,0.5,33.52779522881941,DCT,101,392.1184197627684
+22,Escala de Cinza,./benchmarks/gray8bit/leaves_iso_200.png,0.6,16.23379924825354,SVD,157,7.649924403589463
+23,Escala de Cinza,./benchmarks/gray8bit/leaves_iso_200.png,0.6,28.615466088012482,DCT,157,162.27838857560144
+24,Escala de Cinza,./benchmarks/gray8bit/leaves_iso_200.png,0.7,11.642510561803462,SVD,240,5.004325547348107
+25,Escala de Cinza,./benchmarks/gray8bit/leaves_iso_200.png,0.7,23.223631053370006,DCT,240,69.44444444444444
+26,Escala de Cinza,./benchmarks/gray8bit/leaves_iso_200.png,0.8,7.438110465973452,SVD,370,3.2460490036852585
+27,Escala de Cinza,./benchmarks/gray8bit/leaves_iso_200.png,0.8,17.313328669839958,DCT,370,29.218407596785976
+28,Escala de Cinza,./benchmarks/gray8bit/leaves_iso_200.png,0.9,3.5606927158069,SVD,626,1.9185912641590186
+29,Escala de Cinza,./benchmarks/gray8bit/leaves_iso_200.png,0.9,10.459754618409509,DCT,626,10.20731047576274
+30,Escala de Cinza,./benchmarks/gray8bit/big_building.png,0.5,11.605653503012844,SVD,236,13.103078601711692
+31,Escala de Cinza,./benchmarks/gray8bit/big_building.png,0.5,19.064035442666643,DCT,236,525.8859523125539
+32,Escala de Cinza,./benchmarks/gray8bit/big_building.png,0.6,8.974577783744607,SVD,401,7.711537531181943
+33,Escala de Cinza,./benchmarks/gray8bit/big_building.png,0.6,16.107140617468644,DCT,401,182.14901648621588
+34,Escala de Cinza,./benchmarks/gray8bit/big_building.png,0.7,6.503403687492019,SVD,636,4.862148663528238
+35,Escala de Cinza,./benchmarks/gray8bit/big_building.png,0.7,13.542341798463369,DCT,636,72.41046635813457
+36,Escala de Cinza,./benchmarks/gray8bit/big_building.png,0.8,4.170208469940825,SVD,998,3.098523597198356
+37,Escala de Cinza,./benchmarks/gray8bit/big_building.png,0.8,10.801100569587513,DCT,998,29.407255392548624
+38,Escala de Cinza,./benchmarks/gray8bit/big_building.png,0.9,1.9918749193017942,SVD,1697,1.822231319978762
+39,Escala de Cinza,./benchmarks/gray8bit/big_building.png,0.9,6.964492013830731,DCT,1697,10.170724516799552
+40,Escala de Cinza,./benchmarks/gray8bit/zone_plate.png,0.5,63.07935987813996,SVD,2,599.880023995201
+41,Escala de Cinza,./benchmarks/gray8bit/zone_plate.png,0.5,90.16163339021567,DCT,2,1000000.0
+42,Escala de Cinza,./benchmarks/gray8bit/zone_plate.png,0.6,63.07935987813996,SVD,2,599.880023995201
+43,Escala de Cinza,./benchmarks/gray8bit/zone_plate.png,0.6,90.16163339021567,DCT,2,1000000.0
+44,Escala de Cinza,./benchmarks/gray8bit/zone_plate.png,0.7,63.07935987813996,SVD,2,599.880023995201
+45,Escala de Cinza,./benchmarks/gray8bit/zone_plate.png,0.7,90.16163339021567,DCT,2,1000000.0
+46,Escala de Cinza,./benchmarks/gray8bit/zone_plate.png,0.8,0.28500246439973814,SVD,3,399.92001599680066
+47,Escala de Cinza,./benchmarks/gray8bit/zone_plate.png,0.8,90.16163338123593,DCT,3,444444.44444444444
+48,Escala de Cinza,./benchmarks/gray8bit/zone_plate.png,0.9,0.28500246439973814,SVD,3,399.92001599680066
+49,Escala de Cinza,./benchmarks/gray8bit/zone_plate.png,0.9,90.16163338123593,DCT,3,444444.44444444444
+50,Escala de Cinza,./benchmarks/gray8bit/deer.png,0.5,6.913437555487396,SVD,114,14.01089503864373
+51,Escala de Cinza,./benchmarks/gray8bit/deer.png,0.5,11.367479713440774,DCT,114,536.6944444444445
+52,Escala de Cinza,./benchmarks/gray8bit/deer.png,0.6,5.119775229506571,SVD,240,6.6551751433557715
+53,Escala de Cinza,./benchmarks/gray8bit/deer.png,0.6,8.404377051254128,DCT,240,121.09168402777777
+54,Escala de Cinza,./benchmarks/gray8bit/deer.png,0.7,3.8184181672593014,SVD,471,3.39117204756982
+55,Escala de Cinza,./benchmarks/gray8bit/deer.png,0.7,6.439195813157394,DCT,471,31.440901366293875
+56,Escala de Cinza,./benchmarks/gray8bit/deer.png,0.8,2.7047379679600883,SVD,839,1.9037449754533793
+57,Escala de Cinza,./benchmarks/gray8bit/deer.png,0.8,5.334117314706475,DCT,839,9.908613324506586
+58,Escala de Cinza,./benchmarks/gray8bit/deer.png,0.9,1.5683608721501316,SVD,1391,1.1482688960498815
+59,Escala de Cinza,./benchmarks/gray8bit/deer.png,0.9,4.585653073286879,DCT,1391,3.604811355323661
+60,Escala de Cinza,./benchmarks/gray8bit/nightshot_iso_100.png,0.5,10.239413300123427,SVD,41,32.774515772120736
+61,Escala de Cinza,./benchmarks/gray8bit/nightshot_iso_100.png,0.5,18.510132451388994,DCT,41,3290.8411659726353
+62,Escala de Cinza,./benchmarks/gray8bit/nightshot_iso_100.png,0.6,7.700463023939262,SVD,75,17.916735288759337
+63,Escala de Cinza,./benchmarks/gray8bit/nightshot_iso_100.png,0.6,15.5720171797551,DCT,75,983.4496
+64,Escala de Cinza,./benchmarks/gray8bit/nightshot_iso_100.png,0.7,5.366059254323324,SVD,129,10.416706563232173
+65,Escala de Cinza,./benchmarks/gray8bit/nightshot_iso_100.png,0.7,13.17055529626998,DCT,129,332.4261763115197
+66,Escala de Cinza,./benchmarks/gray8bit/nightshot_iso_100.png,0.8,3.244644406548353,SVD,216,6.221088641930326
+67,Escala de Cinza,./benchmarks/gray8bit/nightshot_iso_100.png,0.8,10.472534196276111,DCT,216,118.5679012345679
+68,Escala de Cinza,./benchmarks/gray8bit/nightshot_iso_100.png,0.9,1.3252261471343456,SVD,413,3.2536444228981845
+69,Escala de Cinza,./benchmarks/gray8bit/nightshot_iso_100.png,0.9,6.799922288514247,DCT,413,32.432059752944554
+70,Escala de Cinza,./benchmarks/gray8bit/big_tree.png,0.5,13.032829373257552,SVD,136,19.144601162205646
+71,Escala de Cinza,./benchmarks/gray8bit/big_tree.png,0.5,23.328882988847496,DCT,136,1119.2960640138408
+72,Escala de Cinza,./benchmarks/gray8bit/big_tree.png,0.6,9.390262384725148,SVD,228,11.419586658157755
+73,Escala de Cinza,./benchmarks/gray8bit/big_tree.png,0.6,18.65350580202158,DCT,228,398.2475377039089
+74,Escala de Cinza,./benchmarks/gray8bit/big_tree.png,0.7,6.304508691120834,SVD,382,6.815878947800964
+75,Escala de Cinza,./benchmarks/gray8bit/big_tree.png,0.7,14.050059051114214,DCT,382,141.87179627751433
+76,Escala de Cinza,./benchmarks/gray8bit/big_tree.png,0.8,3.7321989888266165,SVD,679,3.834559290220866
+77,Escala de Cinza,./benchmarks/gray8bit/big_tree.png,0.8,9.32404616585862,DCT,679,44.903815495801894
+78,Escala de Cinza,./benchmarks/gray8bit/big_tree.png,0.9,1.8017441817821978,SVD,1429,1.8220194248145332
+79,Escala de Cinza,./benchmarks/gray8bit/big_tree.png,0.9,4.633646721763422,DCT,1429,10.138141202845585
+80,Escala de Cinza,./benchmarks/gray8bit/bridge.png,0.5,13.451108513759875,SVD,91,17.990203795322195
+81,Escala de Cinza,./benchmarks/gray8bit/bridge.png,0.5,25.23728218281626,DCT,91,1979.7610192005795
+82,Escala de Cinza,./benchmarks/gray8bit/bridge.png,0.6,9.834113584911318,SVD,156,10.49428554727128
+83,Escala de Cinza,./benchmarks/gray8bit/bridge.png,0.6,20.86612603051466,DCT,156,673.6686801446417
+84,Escala de Cinza,./benchmarks/gray8bit/bridge.png,0.7,6.71187229357973,SVD,263,6.224747320814904
+85,Escala de Cinza,./benchmarks/gray8bit/bridge.png,0.7,16.93266567020837,DCT,263,237.01948849918315
+86,Escala de Cinza,./benchmarks/gray8bit/bridge.png,0.8,4.133148657024839,SVD,465,3.5206635384393974
+87,Escala de Cinza,./benchmarks/gray8bit/bridge.png,0.8,11.953523830936902,DCT,465,75.82102439588392
+88,Escala de Cinza,./benchmarks/gray8bit/bridge.png,0.9,2.07440564171706,SVD,914,1.7911472050047261
+89,Escala de Cinza,./benchmarks/gray8bit/bridge.png,0.9,6.181928910123501,DCT,914,19.624706127393477
+90,Escala de Cinza,./benchmarks/gray8bit/flower_foveon.png,0.5,9.30474628430685,SVD,7,129.56572335361017
+91,Escala de Cinza,./benchmarks/gray8bit/flower_foveon.png,0.5,18.111434955746766,DCT,7,46656.0
+92,Escala de Cinza,./benchmarks/gray8bit/flower_foveon.png,0.6,6.200764074832429,SVD,20,45.34800317376355
+93,Escala de Cinza,./benchmarks/gray8bit/flower_foveon.png,0.6,9.846798915471688,DCT,20,5715.36
+94,Escala de Cinza,./benchmarks/gray8bit/flower_foveon.png,0.7,3.8714874233665797,SVD,45,20.154668077228248
+95,Escala de Cinza,./benchmarks/gray8bit/flower_foveon.png,0.7,7.586331543797217,DCT,45,1128.96
+96,Escala de Cinza,./benchmarks/gray8bit/flower_foveon.png,0.8,2.0362128389703047,SVD,99,9.161212762376476
+97,Escala de Cinza,./benchmarks/gray8bit/flower_foveon.png,0.8,5.495626166078442,DCT,99,233.25619834710744
+98,Escala de Cinza,./benchmarks/gray8bit/flower_foveon.png,0.9,0.78798286046315,SVD,300,3.023200211584237
+99,Escala de Cinza,./benchmarks/gray8bit/flower_foveon.png,0.9,2.487603860514399,DCT,300,25.4016
+100,Escala de Cinza,./benchmarks/gray8bit/leaves_iso_1600.png,0.5,21.13593900967528,SVD,106,11.330548409090053
+101,Escala de Cinza,./benchmarks/gray8bit/leaves_iso_1600.png,0.5,33.89554727013934,DCT,106,355.99857600569595
+102,Escala de Cinza,./benchmarks/gray8bit/leaves_iso_1600.png,0.6,16.07302582943253,SVD,166,7.2351694660454555
+103,Escala de Cinza,./benchmarks/gray8bit/leaves_iso_1600.png,0.6,28.741268501260482,DCT,166,145.15894904920887
+104,Escala de Cinza,./benchmarks/gray8bit/leaves_iso_1600.png,0.7,11.468560966057145,SVD,254,4.72849658017144
+105,Escala de Cinza,./benchmarks/gray8bit/leaves_iso_1600.png,0.7,23.024331715339965,DCT,254,62.000124000248
+106,Escala de Cinza,./benchmarks/gray8bit/leaves_iso_1600.png,0.8,7.241107422139385,SVD,397,3.0252849656512484
+107,Escala de Cinza,./benchmarks/gray8bit/leaves_iso_1600.png,0.8,16.77722132020484,DCT,397,25.3792613365988
+108,Escala de Cinza,./benchmarks/gray8bit/leaves_iso_1600.png,0.9,3.5145590453557363,SVD,689,1.743161293706162
+109,Escala de Cinza,./benchmarks/gray8bit/leaves_iso_1600.png,0.9,9.783558330295794,DCT,689,8.426001798951384
+110,Escala de Cinza,./benchmarks/gray8bit/artificial.png,0.5,12.878724731444592,SVD,54,22.75111197899716
+111,Escala de Cinza,./benchmarks/gray8bit/artificial.png,0.5,22.529611417732756,DCT,54,1438.3758573388202
+112,Escala de Cinza,./benchmarks/gray8bit/artificial.png,0.6,9.399361297758409,SVD,98,12.536327008835169
+113,Escala de Cinza,./benchmarks/gray8bit/artificial.png,0.6,17.07586047276716,DCT,98,436.7246980424823
+114,Escala de Cinza,./benchmarks/gray8bit/artificial.png,0.7,6.547470098240215,SVD,176,6.980454811737764
+115,Escala de Cinza,./benchmarks/gray8bit/artificial.png,0.7,13.033986427715046,DCT,176,135.40495867768595
+116,Escala de Cinza,./benchmarks/gray8bit/artificial.png,0.8,4.154106746422828,SVD,317,3.875583744056298
+117,Escala de Cinza,./benchmarks/gray8bit/artificial.png,0.8,9.582829118734466,DCT,317,41.73893660002587
+118,Escala de Cinza,./benchmarks/gray8bit/artificial.png,0.9,2.081470723692585,SVD,598,2.054448238906098
+119,Escala de Cinza,./benchmarks/gray8bit/artificial.png,0.9,6.158652867692036,DCT,598,11.72890683549401
+120,Escala de Cinza,./benchmarks/gray8bit/nightshot_iso_1600.png,0.5,7.09569296728144,SVD,84,15.997085079249407
+121,Escala de Cinza,./benchmarks/gray8bit/nightshot_iso_1600.png,0.5,13.938852112388135,DCT,84,784.0
+122,Escala de Cinza,./benchmarks/gray8bit/nightshot_iso_1600.png,0.6,5.096672356008931,SVD,167,8.046438003933835
+123,Escala de Cinza,./benchmarks/gray8bit/nightshot_iso_1600.png,0.6,10.646957280759386,DCT,167,198.35433324966831
+124,Escala de Cinza,./benchmarks/gray8bit/nightshot_iso_1600.png,0.7,3.6825237358758898,SVD,335,4.011209393005822
+125,Escala de Cinza,./benchmarks/gray8bit/nightshot_iso_1600.png,0.7,7.581728287426063,DCT,335,49.2929739362887
+126,Escala de Cinza,./benchmarks/gray8bit/nightshot_iso_1600.png,0.8,2.5333456399628176,SVD,620,2.1673470107370165
+127,Escala de Cinza,./benchmarks/gray8bit/nightshot_iso_1600.png,0.8,5.064546248208289,DCT,620,14.391009365244537
+128,Escala de Cinza,./benchmarks/gray8bit/nightshot_iso_1600.png,0.9,1.4104696213079717,SVD,1085,1.238484006135438
+129,Escala de Cinza,./benchmarks/gray8bit/nightshot_iso_1600.png,0.9,3.418306171507935,DCT,1085,4.699105098855359
+130,Escala de Cinza,./benchmarks/gray8bit/fireworks.png,0.5,10.50918562547868,SVD,78,17.227630085345517
+131,Escala de Cinza,./benchmarks/gray8bit/fireworks.png,0.5,21.10876033735966,DCT,78,909.2544378698225
+132,Escala de Cinza,./benchmarks/gray8bit/fireworks.png,0.6,8.114807075451791,SVD,114,11.787325847867985
+133,Escala de Cinza,./benchmarks/gray8bit/fireworks.png,0.6,19.969051755965182,DCT,114,425.66204986149586
+134,Escala de Cinza,./benchmarks/gray8bit/fireworks.png,0.7,5.821041798799184,SVD,165,8.143970585799698
+135,Escala de Cinza,./benchmarks/gray8bit/fireworks.png,0.7,18.487314550448946,DCT,165,203.1920661157025
+136,Escala de Cinza,./benchmarks/gray8bit/fireworks.png,0.8,3.587967271055553,SVD,244,5.5071932240038945
+137,Escala de Cinza,./benchmarks/gray8bit/fireworks.png,0.8,16.317881193216227,DCT,244,92.91695780704111
+138,Escala de Cinza,./benchmarks/gray8bit/fireworks.png,0.9,1.5262103115932375,SVD,409,3.285464906251712
+139,Escala de Cinza,./benchmarks/gray8bit/fireworks.png,0.9,12.498428143282604,DCT,409,33.06952971347613
+140,Escala de Cinza,./benchmarks/gray8bit/hdr.png,0.5,8.878963078630598,SVD,23,53.41565421155855
+141,Escala de Cinza,./benchmarks/gray8bit/hdr.png,0.5,15.770801041736778,DCT,23,7928.741020793951
+142,Escala de Cinza,./benchmarks/gray8bit/hdr.png,0.6,6.09585876352299,SVD,48,25.595000976371804
+143,Escala de Cinza,./benchmarks/gray8bit/hdr.png,0.6,11.70292913950166,DCT,48,1820.4444444444443
+144,Escala de Cinza,./benchmarks/gray8bit/hdr.png,0.7,3.9857707320841196,SVD,97,12.665567493462335
+145,Escala de Cinza,./benchmarks/gray8bit/hdr.png,0.7,8.373899372937798,DCT,97,445.7757466255713
+146,Escala de Cinza,./benchmarks/gray8bit/hdr.png,0.8,2.333670218493348,SVD,200,6.142800234329233
+147,Escala de Cinza,./benchmarks/gray8bit/hdr.png,0.8,5.661521671181758,DCT,200,104.8576
+148,Escala de Cinza,./benchmarks/gray8bit/hdr.png,0.9,1.0280830069203488,SVD,458,2.6824455171743375
+149,Escala de Cinza,./benchmarks/gray8bit/hdr.png,0.9,3.124086192933125,DCT,458,19.995347152037528
+150,Diversas,./benchmarks/misc/4.1.07.png,0.5,29.778055040616174,SVD,1,127.75048732943469
+151,Diversas,./benchmarks/misc/4.1.07.png,0.5,179.96786720839657,DCT,1,65536.0
+152,Diversas,./benchmarks/misc/4.1.07.png,0.6,18.85456835872122,SVD,2,63.875243664717345
+153,Diversas,./benchmarks/misc/4.1.07.png,0.6,38.27495857299704,DCT,2,16384.0
+154,Diversas,./benchmarks/misc/4.1.07.png,0.7,16.330517229477714,SVD,3,42.58349577647823
+155,Diversas,./benchmarks/misc/4.1.07.png,0.7,37.646180932582695,DCT,3,7281.777777777777
+156,Diversas,./benchmarks/misc/4.1.07.png,0.8,9.358361919343542,SVD,8,15.968810916179336
+157,Diversas,./benchmarks/misc/4.1.07.png,0.8,25.289067066051004,DCT,8,1024.0
+158,Diversas,./benchmarks/misc/4.1.07.png,0.9,4.120352686322508,SVD,20,6.387524366471735
+159,Diversas,./benchmarks/misc/4.1.07.png,0.9,16.996613769045386,DCT,20,163.84
+160,Diversas,./benchmarks/misc/7.1.08.png,0.5,11.015256512611257,SVD,4,63.937560975609756
+161,Diversas,./benchmarks/misc/7.1.08.png,0.5,19.985925021619884,DCT,4,16384.0
+162,Diversas,./benchmarks/misc/7.1.08.png,0.6,7.663854943726074,SVD,19,13.46053915275995
+163,Diversas,./benchmarks/misc/7.1.08.png,0.6,12.270594490225474,DCT,19,726.1606648199446
+164,Diversas,./benchmarks/misc/7.1.08.png,0.7,5.444188617679966,SVD,49,5.219392732702837
+165,Diversas,./benchmarks/misc/7.1.08.png,0.7,9.32824100746919,DCT,49,109.18117451062058
+166,Diversas,./benchmarks/misc/7.1.08.png,0.8,3.655370365345794,SVD,106,2.4127381500230096
+167,Diversas,./benchmarks/misc/7.1.08.png,0.8,7.132405046959329,DCT,106,23.330722677109293
+168,Diversas,./benchmarks/misc/7.1.08.png,0.9,2.0313391631496285,SVD,206,1.2415060383613545
+169,Diversas,./benchmarks/misc/7.1.08.png,0.9,5.204574933601862,DCT,206,6.1773965500989725
+170,Diversas,./benchmarks/misc/7.2.01.png,0.5,5.337898455250502,SVD,61,8.389346262471097
+171,Diversas,./benchmarks/misc/7.2.01.png,0.5,8.291591415384302,DCT,61,281.7995162590701
+172,Diversas,./benchmarks/misc/7.2.01.png,0.6,4.346581984778883,SVD,135,3.7907416445239774
+173,Diversas,./benchmarks/misc/7.2.01.png,0.6,6.139260380771458,DCT,135,57.53503429355281
+174,Diversas,./benchmarks/misc/7.2.01.png,0.7,3.4041424583027218,SVD,234,2.1869663333792175
+175,Diversas,./benchmarks/misc/7.2.01.png,0.7,5.662515260613923,DCT,234,19.149974432025715
+176,Diversas,./benchmarks/misc/7.2.01.png,0.8,2.4533121598753374,SVD,363,1.4097799504428015
+177,Diversas,./benchmarks/misc/7.2.01.png,0.8,5.18486513592686,DCT,363,7.957683521920937
+178,Diversas,./benchmarks/misc/7.2.01.png,0.9,1.4242528431053647,SVD,546,0.9372712857339505
+179,Diversas,./benchmarks/misc/7.2.01.png,0.9,4.47926265902129,DCT,546,3.517342242616968
+180,Diversas,./benchmarks/misc/7.1.10.png,0.5,12.764424827517031,SVD,9,28.41669376693767
+181,Diversas,./benchmarks/misc/7.1.10.png,0.5,20.557857261645065,DCT,9,3236.3456790123455
+182,Diversas,./benchmarks/misc/7.1.10.png,0.6,9.19702529368488,SVD,22,11.625011086474501
+183,Diversas,./benchmarks/misc/7.1.10.png,0.6,14.96285184835504,DCT,22,541.6198347107438
+184,Diversas,./benchmarks/misc/7.1.10.png,0.7,6.440253299073477,SVD,46,5.559787910922587
+185,Diversas,./benchmarks/misc/7.1.10.png,0.7,11.440916364987107,DCT,46,123.88657844990549
+186,Diversas,./benchmarks/misc/7.1.10.png,0.8,4.154700132402186,SVD,93,2.7500026226068712
+187,Diversas,./benchmarks/misc/7.1.10.png,0.8,7.9120970497157845,DCT,93,30.309168690021966
+188,Diversas,./benchmarks/misc/7.1.10.png,0.9,2.2072809446599253,SVD,184,1.3899469777306468
+189,Diversas,./benchmarks/misc/7.1.10.png,0.9,5.206091946552652,DCT,184,7.742911153119093
+190,Diversas,./benchmarks/misc/4.2.03.png,0.5,19.079522791350676,SVD,44,5.8125055432372505
+191,Diversas,./benchmarks/misc/4.2.03.png,0.5,26.783517313130776,DCT,44,135.40495867768595
+192,Diversas,./benchmarks/misc/4.2.03.png,0.6,15.39737283637271,SVD,72,3.5520867208672087
+193,Diversas,./benchmarks/misc/4.2.03.png,0.6,24.821274406920672,DCT,72,50.5679012345679
+194,Diversas,./benchmarks/misc/4.2.03.png,0.7,11.723426800138405,SVD,109,2.346332512866413
+195,Diversas,./benchmarks/misc/4.2.03.png,0.7,22.784375360556204,DCT,109,22.064136015486913
+196,Diversas,./benchmarks/misc/4.2.03.png,0.8,8.129235388538657,SVD,160,1.598439024390244
+197,Diversas,./benchmarks/misc/4.2.03.png,0.8,20.122566865820357,DCT,160,10.24
+198,Diversas,./benchmarks/misc/4.2.03.png,0.9,4.471828503920058,SVD,241,1.06120433154539
+199,Diversas,./benchmarks/misc/4.2.03.png,0.9,15.889437525669122,DCT,241,4.513420912174377
+200,Diversas,./benchmarks/misc/4.2.05.png,0.5,24.708698065733827,SVD,6,42.625040650406504
+201,Diversas,./benchmarks/misc/4.2.05.png,0.5,38.800619522892106,DCT,6,7281.777777777777
+202,Diversas,./benchmarks/misc/4.2.05.png,0.6,17.67095498501192,SVD,14,18.26787456445993
+203,Diversas,./benchmarks/misc/4.2.05.png,0.6,31.801215739532147,DCT,14,1337.469387755102
+204,Diversas,./benchmarks/misc/4.2.05.png,0.7,12.248929065008415,SVD,28,9.133937282229965
+205,Diversas,./benchmarks/misc/4.2.05.png,0.7,25.20891498317499,DCT,28,334.3673469387755
+206,Diversas,./benchmarks/misc/4.2.05.png,0.8,7.5051390436481755,SVD,54,4.736115627822945
+207,Diversas,./benchmarks/misc/4.2.05.png,0.8,19.269115243835696,DCT,54,89.89849108367626
+208,Diversas,./benchmarks/misc/4.2.05.png,0.9,3.454179967834186,SVD,112,2.2834843205574913
+209,Diversas,./benchmarks/misc/4.2.05.png,0.9,12.189357907539227,DCT,112,20.897959183673468
+210,Diversas,./benchmarks/misc/4.1.05.png,0.5,24.38021889386732,SVD,3,42.58349577647823
+211,Diversas,./benchmarks/misc/4.1.05.png,0.5,37.512752926324836,DCT,3,7281.777777777777
+212,Diversas,./benchmarks/misc/4.1.05.png,0.6,17.223544155549504,SVD,7,18.25006961849067
+213,Diversas,./benchmarks/misc/4.1.05.png,0.6,29.72628355851345,DCT,7,1337.469387755102
+214,Diversas,./benchmarks/misc/4.1.05.png,0.7,12.218334244489084,SVD,13,9.826960563802668
+215,Diversas,./benchmarks/misc/4.1.05.png,0.7,26.054701662271004,DCT,13,387.7869822485207
+216,Diversas,./benchmarks/misc/4.1.05.png,0.8,7.23097910742332,SVD,25,5.110019493177388
+217,Diversas,./benchmarks/misc/4.1.05.png,0.8,19.791123931372322,DCT,25,104.8576
+218,Diversas,./benchmarks/misc/4.1.05.png,0.9,3.289534822226983,SVD,53,2.4103865533855604
+219,Diversas,./benchmarks/misc/4.1.05.png,0.9,12.24241204216153,DCT,53,23.330722677109293
+220,Diversas,./benchmarks/misc/5.3.02.png,0.5,13.192046070790928,SVD,73,7.010275643982698
+221,Diversas,./benchmarks/misc/5.3.02.png,0.5,21.162223248113204,DCT,73,196.76787389754176
+222,Diversas,./benchmarks/misc/5.3.02.png,0.6,10.252075444069616,SVD,120,4.264584350089475
+223,Diversas,./benchmarks/misc/5.3.02.png,0.6,18.518463137001103,DCT,120,72.81777777777778
+224,Diversas,./benchmarks/misc/5.3.02.png,0.7,7.557386459262101,SVD,190,2.6934216947933525
+225,Diversas,./benchmarks/misc/5.3.02.png,0.7,15.49036698298839,DCT,190,29.046426592797783
+226,Diversas,./benchmarks/misc/5.3.02.png,0.8,5.166009557859354,SVD,298,1.7172822886266341
+227,Diversas,./benchmarks/misc/5.3.02.png,0.8,11.86353060457093,DCT,298,11.807756407369038
+228,Diversas,./benchmarks/misc/5.3.02.png,0.9,2.8810030880483977,SVD,479,1.068371862235359
+229,Diversas,./benchmarks/misc/5.3.02.png,0.9,7.992657800957173,DCT,479,4.5701334983721305
+230,Diversas,./benchmarks/misc/texmos2.s512.png,0.5,49.63597190991785,SVD,1,255.75024390243902
+231,Diversas,./benchmarks/misc/texmos2.s512.png,0.5,162.11919021490795,DCT,1,262144.0
+232,Diversas,./benchmarks/misc/texmos2.s512.png,0.6,39.547790281743154,SVD,2,127.87512195121951
+233,Diversas,./benchmarks/misc/texmos2.s512.png,0.6,73.88171056099335,DCT,2,65536.0
+234,Diversas,./benchmarks/misc/texmos2.s512.png,0.7,31.415090153037955,SVD,3,85.25008130081301
+235,Diversas,./benchmarks/misc/texmos2.s512.png,0.7,67.61912910780501,DCT,3,29127.11111111111
+236,Diversas,./benchmarks/misc/texmos2.s512.png,0.8,20.180305815595716,SVD,5,51.15004878048781
+237,Diversas,./benchmarks/misc/texmos2.s512.png,0.8,54.66110266522603,DCT,5,10485.76
+238,Diversas,./benchmarks/misc/texmos2.s512.png,0.9,11.134767648130863,SVD,8,31.968780487804878
+239,Diversas,./benchmarks/misc/texmos2.s512.png,0.9,47.30662402779935,DCT,8,4096.0
+240,Diversas,./benchmarks/misc/7.1.06.png,0.5,13.082043376452512,SVD,24,10.656260162601626
+241,Diversas,./benchmarks/misc/7.1.06.png,0.5,20.955772518267302,DCT,24,455.1111111111111
+242,Diversas,./benchmarks/misc/7.1.06.png,0.6,9.90179919647782,SVD,47,5.441494551115724
+243,Diversas,./benchmarks/misc/7.1.06.png,0.6,16.523800333181555,DCT,47,118.67089180624717
+244,Diversas,./benchmarks/misc/7.1.06.png,0.7,7.375635448614053,SVD,83,3.081328239788422
+245,Diversas,./benchmarks/misc/7.1.06.png,0.7,13.158768914102952,DCT,83,38.05254753955581
+246,Diversas,./benchmarks/misc/7.1.06.png,0.8,5.066743577066036,SVD,141,1.8138315170385746
+247,Diversas,./benchmarks/misc/7.1.06.png,0.8,10.262461065790506,DCT,141,13.185654645138575
+248,Diversas,./benchmarks/misc/7.1.06.png,0.9,2.8507943708798167,SVD,235,1.0882989102231448
+249,Diversas,./benchmarks/misc/7.1.06.png,0.9,7.488414106976371,DCT,235,4.746835672249887
+250,Diversas,./benchmarks/misc/5.1.11.png,0.5,18.234919155605485,SVD,1,127.75048732943469
+251,Diversas,./benchmarks/misc/5.1.11.png,0.5,196.35900572894377,DCT,1,65536.0
+252,Diversas,./benchmarks/misc/5.1.11.png,0.6,16.118128996022577,SVD,2,63.875243664717345
+253,Diversas,./benchmarks/misc/5.1.11.png,0.6,33.072236979726775,DCT,2,16384.0
+254,Diversas,./benchmarks/misc/5.1.11.png,0.7,11.470746289192608,SVD,8,15.968810916179336
+255,Diversas,./benchmarks/misc/5.1.11.png,0.7,18.861721363683003,DCT,8,1024.0
+256,Diversas,./benchmarks/misc/5.1.11.png,0.8,7.142965474603663,SVD,23,5.554369014323248
+257,Diversas,./benchmarks/misc/5.1.11.png,0.8,15.649818955292172,DCT,23,123.88657844990549
+258,Diversas,./benchmarks/misc/5.1.11.png,0.9,3.340918115283622,SVD,50,2.555009746588694
+259,Diversas,./benchmarks/misc/5.1.11.png,0.9,11.810227521964947,DCT,50,26.2144
+260,Diversas,./benchmarks/misc/7.1.05.png,0.5,13.811982522061811,SVD,21,12.178583042973287
+261,Diversas,./benchmarks/misc/7.1.05.png,0.5,21.679801202233968,DCT,21,594.4308390022676
+262,Diversas,./benchmarks/misc/7.1.05.png,0.6,10.459990434017783,SVD,42,6.089291521486643
+263,Diversas,./benchmarks/misc/7.1.05.png,0.6,17.43744412049258,DCT,42,148.6077097505669
+264,Diversas,./benchmarks/misc/7.1.05.png,0.7,7.654468391198582,SVD,79,3.2373448595245446
+265,Diversas,./benchmarks/misc/7.1.05.png,0.7,13.698247593650484,DCT,79,42.0035250761096
+266,Diversas,./benchmarks/misc/7.1.05.png,0.8,5.30248599914491,SVD,137,1.8667901014776571
+267,Diversas,./benchmarks/misc/7.1.05.png,0.8,10.67405279332002,DCT,137,13.96686024828174
+268,Diversas,./benchmarks/misc/7.1.05.png,0.9,2.967813513950439,SVD,233,1.0976405317701246
+269,Diversas,./benchmarks/misc/7.1.05.png,0.9,7.709637752686766,DCT,233,4.828676159074583
+270,Diversas,./benchmarks/misc/4.2.01.png,0.5,16.826487072004515,SVD,4,63.937560975609756
+271,Diversas,./benchmarks/misc/4.2.01.png,0.5,36.51217660362992,DCT,4,16384.0
+272,Diversas,./benchmarks/misc/4.2.01.png,0.6,11.509319683189474,SVD,9,28.41669376693767
+273,Diversas,./benchmarks/misc/4.2.01.png,0.6,28.018460857002147,DCT,9,3236.3456790123455
+274,Diversas,./benchmarks/misc/4.2.01.png,0.7,6.940890953953372,SVD,19,13.46053915275995
+275,Diversas,./benchmarks/misc/4.2.01.png,0.7,22.637394294646025,DCT,19,726.1606648199446
+276,Diversas,./benchmarks/misc/4.2.01.png,0.8,3.738298845530462,SVD,46,5.559787910922587
+277,Diversas,./benchmarks/misc/4.2.01.png,0.8,13.496948160179606,DCT,46,123.88657844990549
+278,Diversas,./benchmarks/misc/4.2.01.png,0.9,1.8132477956226114,SVD,128,1.9980487804878049
+279,Diversas,./benchmarks/misc/4.2.01.png,0.9,6.829550448943695,DCT,128,16.0
+280,Diversas,./benchmarks/misc/4.1.03.png,0.5,20.339238032620134,SVD,1,127.75048732943469
+281,Diversas,./benchmarks/misc/4.1.03.png,0.5,142.8399409602248,DCT,1,65536.0
+282,Diversas,./benchmarks/misc/4.1.03.png,0.6,15.975754875910894,SVD,2,63.875243664717345
+283,Diversas,./benchmarks/misc/4.1.03.png,0.6,29.682123766893504,DCT,2,16384.0
+284,Diversas,./benchmarks/misc/4.1.03.png,0.7,10.463577912503412,SVD,5,25.55009746588694
+285,Diversas,./benchmarks/misc/4.1.03.png,0.7,26.43940625479716,DCT,5,2621.44
+286,Diversas,./benchmarks/misc/4.1.03.png,0.8,5.5113471742789555,SVD,15,8.516699155295646
+287,Diversas,./benchmarks/misc/4.1.03.png,0.8,18.400569282720742,DCT,15,291.2711111111111
+288,Diversas,./benchmarks/misc/4.1.03.png,0.9,2.3572875729136697,SVD,40,3.1937621832358674
+289,Diversas,./benchmarks/misc/4.1.03.png,0.9,11.28752697199764,DCT,40,40.96
+290,Diversas,./benchmarks/misc/4.1.04.png,0.5,20.813725949183873,SVD,3,42.58349577647823
+291,Diversas,./benchmarks/misc/4.1.04.png,0.5,47.64143688528369,DCT,3,7281.777777777777
+292,Diversas,./benchmarks/misc/4.1.04.png,0.6,16.61682573844166,SVD,5,25.55009746588694
+293,Diversas,./benchmarks/misc/4.1.04.png,0.6,43.44665277204817,DCT,5,2621.44
+294,Diversas,./benchmarks/misc/4.1.04.png,0.7,10.830151863862714,SVD,10,12.77504873294347
+295,Diversas,./benchmarks/misc/4.1.04.png,0.7,29.19630396058869,DCT,10,655.36
+296,Diversas,./benchmarks/misc/4.1.04.png,0.8,5.898128181180811,SVD,20,6.387524366471735
+297,Diversas,./benchmarks/misc/4.1.04.png,0.8,22.583781227216882,DCT,20,163.84
+298,Diversas,./benchmarks/misc/4.1.04.png,0.9,2.5611871337113286,SVD,49,2.6071528026415245
+299,Diversas,./benchmarks/misc/4.1.04.png,0.9,10.801826824875345,DCT,49,27.295293627655145
+300,Diversas,./benchmarks/misc/4.1.02.png,0.5,10.581594216647556,SVD,11,11.613680666312245
+301,Diversas,./benchmarks/misc/4.1.02.png,0.5,20.567872292083937,DCT,11,541.6198347107438
+302,Diversas,./benchmarks/misc/4.1.02.png,0.6,8.148625889898806,SVD,18,7.097249296079705
+303,Diversas,./benchmarks/misc/4.1.02.png,0.6,16.776256996771377,DCT,18,202.2716049382716
+304,Diversas,./benchmarks/misc/4.1.02.png,0.7,5.76933830692679,SVD,30,4.258349577647823
+305,Diversas,./benchmarks/misc/4.1.02.png,0.7,14.266624534167468,DCT,30,72.81777777777778
+306,Diversas,./benchmarks/misc/4.1.02.png,0.8,3.711125585067079,SVD,50,2.555009746588694
+307,Diversas,./benchmarks/misc/4.1.02.png,0.8,10.908133622229302,DCT,50,26.2144
+308,Diversas,./benchmarks/misc/4.1.02.png,0.9,1.8864452671063896,SVD,89,1.435398734038592
+309,Diversas,./benchmarks/misc/4.1.02.png,0.9,7.42817335347547,DCT,89,8.273702815301098
+310,Diversas,./benchmarks/misc/5.2.10.png,0.5,17.6283246868093,SVD,29,8.818973927670312
+311,Diversas,./benchmarks/misc/5.2.10.png,0.5,28.907334274083237,DCT,29,311.70511296076097
+312,Diversas,./benchmarks/misc/5.2.10.png,0.6,13.698807487398616,SVD,55,4.650004434589801
+313,Diversas,./benchmarks/misc/5.2.10.png,0.6,23.53453913679836,DCT,55,86.65917355371901
+314,Diversas,./benchmarks/misc/5.2.10.png,0.7,10.336370931570924,SVD,92,2.7798939554612936
+315,Diversas,./benchmarks/misc/5.2.10.png,0.7,19.47399605636065,DCT,92,30.97164461247637
+316,Diversas,./benchmarks/misc/5.2.10.png,0.8,7.1693777334457,SVD,145,1.7637947855340623
+317,Diversas,./benchmarks/misc/5.2.10.png,0.8,15.896039528928466,DCT,145,12.46820451843044
+318,Diversas,./benchmarks/misc/5.2.10.png,0.9,3.9570975653389633,SVD,232,1.102371740958789
+319,Diversas,./benchmarks/misc/5.2.10.png,0.9,11.611241943772601,DCT,232,4.87039239001189
+320,Diversas,./benchmarks/misc/5.3.01.png,0.5,16.526396312671487,SVD,33,15.507579454870816
+321,Diversas,./benchmarks/misc/5.3.01.png,0.5,25.893926187787095,DCT,33,962.8797061524334
+322,Diversas,./benchmarks/misc/5.3.01.png,0.6,12.274921414712878,SVD,62,8.254034225979629
+323,Diversas,./benchmarks/misc/5.3.01.png,0.6,20.44886718711746,DCT,62,272.78251821019774
+324,Diversas,./benchmarks/misc/5.3.01.png,0.7,8.638898675209571,SVD,113,4.528762141687937
+325,Diversas,./benchmarks/misc/5.3.01.png,0.7,15.84822967025488,DCT,113,82.11888166653614
+326,Diversas,./benchmarks/misc/5.3.01.png,0.8,5.569581016591707,SVD,201,2.546020507516104
+327,Diversas,./benchmarks/misc/5.3.01.png,0.8,11.668398318875747,DCT,201,25.95420905423133
+328,Diversas,./benchmarks/misc/5.3.01.png,0.9,2.8913207021513347,SVD,374,1.3683158342533073
+329,Diversas,./benchmarks/misc/5.3.01.png,0.9,7.2831075621476575,DCT,374,7.4964683004947235
+330,Diversas,./benchmarks/misc/7.1.01.png,0.5,12.40886392263155,SVD,13,19.673095684803002
+331,Diversas,./benchmarks/misc/7.1.01.png,0.5,18.61186573825009,DCT,13,1551.1479289940828
+332,Diversas,./benchmarks/misc/7.1.01.png,0.6,9.090739740772621,SVD,28,9.133937282229965
+333,Diversas,./benchmarks/misc/7.1.01.png,0.6,15.112718314944356,DCT,28,334.3673469387755
+334,Diversas,./benchmarks/misc/7.1.01.png,0.7,6.388428413647121,SVD,55,4.650004434589801
+335,Diversas,./benchmarks/misc/7.1.01.png,0.7,11.976958764104864,DCT,55,86.65917355371901
+336,Diversas,./benchmarks/misc/7.1.01.png,0.8,4.182732528843342,SVD,104,2.4591369606003752
+337,Diversas,./benchmarks/misc/7.1.01.png,0.8,8.858028231410024,DCT,104,24.236686390532544
+338,Diversas,./benchmarks/misc/7.1.01.png,0.9,2.2345485309183166,SVD,196,1.3048481831757093
+339,Diversas,./benchmarks/misc/7.1.01.png,0.9,5.964924414869968,DCT,196,6.823823406913786
+340,Diversas,./benchmarks/misc/4.2.07.png,0.5,22.2521026103537,SVD,9,28.41669376693767
+341,Diversas,./benchmarks/misc/4.2.07.png,0.5,41.33239779701055,DCT,9,3236.3456790123455
+342,Diversas,./benchmarks/misc/4.2.07.png,0.6,14.992249145629918,SVD,18,14.208346883468835
+343,Diversas,./benchmarks/misc/4.2.07.png,0.6,29.36024961606065,DCT,18,809.0864197530864
+344,Diversas,./benchmarks/misc/4.2.07.png,0.7,10.002744709869479,SVD,34,7.52206599713056
+345,Diversas,./benchmarks/misc/4.2.07.png,0.7,20.116196021228397,DCT,34,226.7681660899654
+346,Diversas,./benchmarks/misc/4.2.07.png,0.8,5.9522958021764465,SVD,70,3.653574912891986
+347,Diversas,./benchmarks/misc/4.2.07.png,0.8,13.128514511649055,DCT,70,53.498775510204084
+348,Diversas,./benchmarks/misc/4.2.07.png,0.9,2.998243508392534,SVD,158,1.6186724297622723
+349,Diversas,./benchmarks/misc/4.2.07.png,0.9,7.956722062580488,DCT,158,10.5008812690274
+350,Diversas,./benchmarks/misc/5.1.10.png,0.5,25.864821897456252,SVD,13,9.826960563802668
+351,Diversas,./benchmarks/misc/5.1.10.png,0.5,39.74407067012062,DCT,13,387.7869822485207
+352,Diversas,./benchmarks/misc/5.1.10.png,0.6,19.92892271337499,SVD,21,6.08335653949689
+353,Diversas,./benchmarks/misc/5.1.10.png,0.6,34.56876101115866,DCT,21,148.6077097505669
+354,Diversas,./benchmarks/misc/5.1.10.png,0.7,14.464484301213758,SVD,34,3.757367274395138
+355,Diversas,./benchmarks/misc/5.1.10.png,0.7,28.08822920509674,DCT,34,56.69204152249135
+356,Diversas,./benchmarks/misc/5.1.10.png,0.8,9.446833117465212,SVD,57,2.241236619814644
+357,Diversas,./benchmarks/misc/5.1.10.png,0.8,20.940623557785663,DCT,57,20.171129578331794
+358,Diversas,./benchmarks/misc/5.1.10.png,0.9,5.092206193454254,SVD,96,1.3307342430149447
+359,Diversas,./benchmarks/misc/5.1.10.png,0.9,14.187690904607267,DCT,96,7.111111111111111
+360,Diversas,./benchmarks/misc/5.2.08.png,0.5,16.681655370341705,SVD,10,25.575024390243904
+361,Diversas,./benchmarks/misc/5.2.08.png,0.5,30.81671190666248,DCT,10,2621.44
+362,Diversas,./benchmarks/misc/5.2.08.png,0.6,12.245159117737781,SVD,23,11.119575821845174
+363,Diversas,./benchmarks/misc/5.2.08.png,0.6,26.962833956994405,DCT,23,495.54631379962194
+364,Diversas,./benchmarks/misc/5.2.08.png,0.7,8.573637735149015,SVD,43,5.947680090754396
+365,Diversas,./benchmarks/misc/5.2.08.png,0.7,22.828587667414592,DCT,43,141.77609518658736
+366,Diversas,./benchmarks/misc/5.2.08.png,0.8,5.321251660682688,SVD,80,3.196878048780488
+367,Diversas,./benchmarks/misc/5.2.08.png,0.8,17.71674916717811,DCT,80,40.96
+368,Diversas,./benchmarks/misc/5.2.08.png,0.9,2.6525502908159226,SVD,157,1.6289824452384651
+369,Diversas,./benchmarks/misc/5.2.08.png,0.9,12.803391765231117,DCT,157,10.635076473690615
+370,Diversas,./benchmarks/misc/5.2.09.png,0.5,23.08825658590637,SVD,23,11.119575821845174
+371,Diversas,./benchmarks/misc/5.2.09.png,0.5,32.82072789267989,DCT,23,495.54631379962194
+372,Diversas,./benchmarks/misc/5.2.09.png,0.6,17.885624179312824,SVD,42,6.089291521486643
+373,Diversas,./benchmarks/misc/5.2.09.png,0.6,28.714284900607716,DCT,42,148.6077097505669
+374,Diversas,./benchmarks/misc/5.2.09.png,0.7,13.136848757883568,SVD,70,3.653574912891986
+375,Diversas,./benchmarks/misc/5.2.09.png,0.7,23.699090331444445,DCT,70,53.498775510204084
+376,Diversas,./benchmarks/misc/5.2.09.png,0.8,8.744908985679443,SVD,112,2.2834843205574913
+377,Diversas,./benchmarks/misc/5.2.09.png,0.8,18.702784631555264,DCT,112,20.897959183673468
+378,Diversas,./benchmarks/misc/5.2.09.png,0.9,4.537169608960666,SVD,185,1.3824337508239948
+379,Diversas,./benchmarks/misc/5.2.09.png,0.9,12.768078215141585,DCT,185,7.659430241051862
+380,Diversas,./benchmarks/misc/7.1.04.png,0.5,12.532757379044327,SVD,9,28.41669376693767
+381,Diversas,./benchmarks/misc/7.1.04.png,0.5,22.541615483697523,DCT,9,3236.3456790123455
+382,Diversas,./benchmarks/misc/7.1.04.png,0.6,9.123107549709891,SVD,21,12.178583042973287
+383,Diversas,./benchmarks/misc/7.1.04.png,0.6,15.532046732079733,DCT,21,594.4308390022676
+384,Diversas,./benchmarks/misc/7.1.04.png,0.7,6.214623052962489,SVD,46,5.559787910922587
+385,Diversas,./benchmarks/misc/7.1.04.png,0.7,11.721919855001222,DCT,46,123.88657844990549
+386,Diversas,./benchmarks/misc/7.1.04.png,0.8,4.044651664841061,SVD,93,2.7500026226068712
+387,Diversas,./benchmarks/misc/7.1.04.png,0.8,8.132673925001885,DCT,93,30.309168690021966
+388,Diversas,./benchmarks/misc/7.1.04.png,0.9,2.1468502997460415,SVD,184,1.3899469777306468
+389,Diversas,./benchmarks/misc/7.1.04.png,0.9,5.37765131462763,DCT,184,7.742911153119093
+390,Diversas,./benchmarks/misc/5.1.09.png,0.5,14.763392465819011,SVD,4,31.937621832358673
+391,Diversas,./benchmarks/misc/5.1.09.png,0.5,21.202269719561038,DCT,4,4096.0
+392,Diversas,./benchmarks/misc/5.1.09.png,0.6,10.478734834716851,SVD,11,11.613680666312245
+393,Diversas,./benchmarks/misc/5.1.09.png,0.6,17.712930813388077,DCT,11,541.6198347107438
+394,Diversas,./benchmarks/misc/5.1.09.png,0.7,7.483808898774494,SVD,28,4.5625174046226675
+395,Diversas,./benchmarks/misc/5.1.09.png,0.7,11.798090686491728,DCT,28,83.59183673469387
+396,Diversas,./benchmarks/misc/5.1.09.png,0.8,5.172903359608815,SVD,57,2.241236619814644
+397,Diversas,./benchmarks/misc/5.1.09.png,0.8,9.26705828751278,DCT,57,20.171129578331794
+398,Diversas,./benchmarks/misc/5.1.09.png,0.9,2.902754479160217,SVD,107,1.193929788125558
+399,Diversas,./benchmarks/misc/5.1.09.png,0.9,6.871578743203571,DCT,107,5.72416804961132
+400,Diversas,./benchmarks/misc/5.1.14.png,0.5,19.653123288236806,SVD,11,11.613680666312245
+401,Diversas,./benchmarks/misc/5.1.14.png,0.5,29.5500997895662,DCT,11,541.6198347107438
+402,Diversas,./benchmarks/misc/5.1.14.png,0.6,15.40446282774712,SVD,19,6.7237098594439315
+403,Diversas,./benchmarks/misc/5.1.14.png,0.6,26.266580186383226,DCT,19,181.54016620498615
+404,Diversas,./benchmarks/misc/5.1.14.png,0.7,11.284836085198219,SVD,32,3.992202729044834
+405,Diversas,./benchmarks/misc/5.1.14.png,0.7,21.91124518299626,DCT,32,64.0
+406,Diversas,./benchmarks/misc/5.1.14.png,0.8,7.575163173794157,SVD,51,2.5049115162634252
+407,Diversas,./benchmarks/misc/5.1.14.png,0.8,17.414988727404197,DCT,51,25.196462898885045
+408,Diversas,./benchmarks/misc/5.1.14.png,0.9,3.9436057648722347,SVD,85,1.5029469097580552
+409,Diversas,./benchmarks/misc/5.1.14.png,0.9,11.879816676744895,DCT,85,9.070726643598617
+410,Diversas,./benchmarks/misc/5.1.12.png,0.5,29.74703953753855,SVD,2,63.875243664717345
+411,Diversas,./benchmarks/misc/5.1.12.png,0.5,57.249249381210646,DCT,2,16384.0
+412,Diversas,./benchmarks/misc/5.1.12.png,0.6,21.581299440547117,SVD,4,31.937621832358673
+413,Diversas,./benchmarks/misc/5.1.12.png,0.6,45.87121659529497,DCT,4,4096.0
+414,Diversas,./benchmarks/misc/5.1.12.png,0.7,15.319651643152445,SVD,9,14.19449859215941
+415,Diversas,./benchmarks/misc/5.1.12.png,0.7,29.771790219800344,DCT,9,809.0864197530864
+416,Diversas,./benchmarks/misc/5.1.12.png,0.8,8.904397536310917,SVD,20,6.387524366471735
+417,Diversas,./benchmarks/misc/5.1.12.png,0.8,24.263372260427087,DCT,20,163.84
+418,Diversas,./benchmarks/misc/5.1.12.png,0.9,4.07065368850434,SVD,46,2.777184507161624
+419,Diversas,./benchmarks/misc/5.1.12.png,0.9,16.37822445805185,DCT,46,30.97164461247637
+420,Diversas,./benchmarks/misc/4.1.06.png,0.5,27.25956171829842,SVD,9,14.19449859215941
+421,Diversas,./benchmarks/misc/4.1.06.png,0.5,44.407077518457434,DCT,9,809.0864197530864
+422,Diversas,./benchmarks/misc/4.1.06.png,0.6,20.78912231622863,SVD,15,8.516699155295646
+423,Diversas,./benchmarks/misc/4.1.06.png,0.6,37.50900322010046,DCT,15,291.2711111111111
+424,Diversas,./benchmarks/misc/4.1.06.png,0.7,14.169689364814928,SVD,27,4.731499530719804
+425,Diversas,./benchmarks/misc/4.1.06.png,0.7,28.747412014260583,DCT,27,89.89849108367626
+426,Diversas,./benchmarks/misc/4.1.06.png,0.8,9.14848435895402,SVD,47,2.7180954750943553
+427,Diversas,./benchmarks/misc/4.1.06.png,0.8,20.984488519129687,DCT,47,29.667722951561792
+428,Diversas,./benchmarks/misc/4.1.06.png,0.9,4.727367883237512,SVD,87,1.4683964060854564
+429,Diversas,./benchmarks/misc/4.1.06.png,0.9,13.884698500582047,DCT,87,8.65847536002114
+430,Diversas,./benchmarks/misc/7.1.03.png,0.5,12.241142045830921,SVD,8,31.968780487804878
+431,Diversas,./benchmarks/misc/7.1.03.png,0.5,18.228562642364494,DCT,8,4096.0
+432,Diversas,./benchmarks/misc/7.1.03.png,0.6,8.804475469113875,SVD,25,10.23000975609756
+433,Diversas,./benchmarks/misc/7.1.03.png,0.6,13.343980604367038,DCT,25,419.4304
+434,Diversas,./benchmarks/misc/7.1.03.png,0.7,6.343338846474951,SVD,58,4.409486963835156
+435,Diversas,./benchmarks/misc/7.1.03.png,0.7,10.546811619697227,DCT,58,77.92627824019024
+436,Diversas,./benchmarks/misc/7.1.03.png,0.8,4.302372720648793,SVD,115,2.223915164369035
+437,Diversas,./benchmarks/misc/7.1.03.png,0.8,8.236079497918082,DCT,115,19.821852551984875
+438,Diversas,./benchmarks/misc/7.1.03.png,0.9,2.3878143155081872,SVD,213,1.200705370433986
+439,Diversas,./benchmarks/misc/7.1.03.png,0.9,5.942772568563485,DCT,213,5.778042275562608
+440,Diversas,./benchmarks/misc/ruler.512.png,0.5,30.821312781087244,SVD,1,255.75024390243902
+441,Diversas,./benchmarks/misc/ruler.512.png,0.5,240.56128076852409,DCT,1,262144.0
+442,Diversas,./benchmarks/misc/ruler.512.png,0.6,27.19810341547385,SVD,2,127.87512195121951
+443,Diversas,./benchmarks/misc/ruler.512.png,0.6,79.79920522429843,DCT,2,65536.0
+444,Diversas,./benchmarks/misc/ruler.512.png,0.7,18.656861588582977,SVD,6,42.625040650406504
+445,Diversas,./benchmarks/misc/ruler.512.png,0.7,79.70041190611951,DCT,6,7281.777777777777
+446,Diversas,./benchmarks/misc/ruler.512.png,0.8,12.606771399415477,SVD,15,17.0500162601626
+447,Diversas,./benchmarks/misc/ruler.512.png,0.8,79.51845228883141,DCT,15,1165.0844444444444
+448,Diversas,./benchmarks/misc/ruler.512.png,0.9,7.0517013329917075,SVD,31,8.250007867820614
+449,Diversas,./benchmarks/misc/ruler.512.png,0.9,79.08526673905429,DCT,31,272.78251821019774
+450,Diversas,./benchmarks/misc/4.1.01.png,0.5,14.137144522010214,SVD,7,18.25006961849067
+451,Diversas,./benchmarks/misc/4.1.01.png,0.5,26.802198438545346,DCT,7,1337.469387755102
+452,Diversas,./benchmarks/misc/4.1.01.png,0.6,10.54227498864542,SVD,13,9.826960563802668
+453,Diversas,./benchmarks/misc/4.1.01.png,0.6,20.110321728456704,DCT,13,387.7869822485207
+454,Diversas,./benchmarks/misc/4.1.01.png,0.7,7.462147076598782,SVD,23,5.554369014323248
+455,Diversas,./benchmarks/misc/4.1.01.png,0.7,15.264178102940622,DCT,23,123.88657844990549
+456,Diversas,./benchmarks/misc/4.1.01.png,0.8,4.72733206466484,SVD,40,3.1937621832358674
+457,Diversas,./benchmarks/misc/4.1.01.png,0.8,11.184637718717056,DCT,40,40.96
+458,Diversas,./benchmarks/misc/4.1.01.png,0.9,2.309685732911776,SVD,78,1.6378267606337782
+459,Diversas,./benchmarks/misc/4.1.01.png,0.9,7.0817163095302496,DCT,78,10.771860618014465
+460,Diversas,./benchmarks/misc/boat.512.png,0.5,17.669100865481305,SVD,13,19.673095684803002
+461,Diversas,./benchmarks/misc/boat.512.png,0.5,30.508027409629605,DCT,13,1551.1479289940828
+462,Diversas,./benchmarks/misc/boat.512.png,0.6,13.283231712579152,SVD,27,9.47223125564589
+463,Diversas,./benchmarks/misc/boat.512.png,0.6,23.70388481339051,DCT,27,359.59396433470505
+464,Diversas,./benchmarks/misc/boat.512.png,0.7,9.323111189465106,SVD,52,4.9182739212007505
+465,Diversas,./benchmarks/misc/boat.512.png,0.7,19.066088523083287,DCT,52,96.94674556213018
+466,Diversas,./benchmarks/misc/boat.512.png,0.8,5.976747239195192,SVD,93,2.7500026226068712
+467,Diversas,./benchmarks/misc/boat.512.png,0.8,15.080251321913854,DCT,93,30.309168690021966
+468,Diversas,./benchmarks/misc/boat.512.png,0.9,3.0665090934214203,SVD,175,1.4614299651567944
+469,Diversas,./benchmarks/misc/boat.512.png,0.9,9.917834210185244,DCT,175,8.559804081632652
+470,Diversas,./benchmarks/misc/gray21.512.png,0.5,24.22216899468953,SVD,1,255.75024390243902
+471,Diversas,./benchmarks/misc/gray21.512.png,0.5,148.51130450855752,DCT,1,262144.0
+472,Diversas,./benchmarks/misc/gray21.512.png,0.6,24.22216899468953,SVD,1,255.75024390243902
+473,Diversas,./benchmarks/misc/gray21.512.png,0.6,148.51130450855752,DCT,1,262144.0
+474,Diversas,./benchmarks/misc/gray21.512.png,0.7,24.22216899468953,SVD,1,255.75024390243902
+475,Diversas,./benchmarks/misc/gray21.512.png,0.7,148.51130450855752,DCT,1,262144.0
+476,Diversas,./benchmarks/misc/gray21.512.png,0.8,24.22216899468953,SVD,1,255.75024390243902
+477,Diversas,./benchmarks/misc/gray21.512.png,0.8,148.51130450855752,DCT,1,262144.0
+478,Diversas,./benchmarks/misc/gray21.512.png,0.9,0.1230700846008924,SVD,2,127.87512195121951
+479,Diversas,./benchmarks/misc/gray21.512.png,0.9,76.92120771442606,DCT,2,65536.0
+480,Diversas,./benchmarks/misc/7.1.09.png,0.5,12.60802036259432,SVD,15,17.0500162601626
+481,Diversas,./benchmarks/misc/7.1.09.png,0.5,18.23539407255677,DCT,15,1165.0844444444444
+482,Diversas,./benchmarks/misc/7.1.09.png,0.6,9.543530605273324,SVD,35,7.307149825783972
+483,Diversas,./benchmarks/misc/7.1.09.png,0.6,15.353217400460984,DCT,35,213.99510204081633
+484,Diversas,./benchmarks/misc/7.1.09.png,0.7,6.9751582273517485,SVD,68,3.76103299856528
+485,Diversas,./benchmarks/misc/7.1.09.png,0.7,12.654052494637213,DCT,68,56.69204152249135
+486,Diversas,./benchmarks/misc/7.1.09.png,0.8,4.717556635821065,SVD,121,2.113638379359
+487,Diversas,./benchmarks/misc/7.1.09.png,0.8,10.281731305262266,DCT,121,17.904787924322108
+488,Diversas,./benchmarks/misc/7.1.09.png,0.9,2.593576417792578,SVD,213,1.200705370433986
+489,Diversas,./benchmarks/misc/7.1.09.png,0.9,7.435302615419314,DCT,213,5.778042275562608
+490,Diversas,./benchmarks/misc/5.1.13.png,0.5,49.25432425962634,SVD,3,42.58349577647823
+491,Diversas,./benchmarks/misc/5.1.13.png,0.5,75.72227135244847,DCT,3,7281.777777777777
+492,Diversas,./benchmarks/misc/5.1.13.png,0.6,37.09516929084401,SVD,5,25.55009746588694
+493,Diversas,./benchmarks/misc/5.1.13.png,0.6,73.48881329073608,DCT,5,2621.44
+494,Diversas,./benchmarks/misc/5.1.13.png,0.7,24.428065069202184,SVD,9,14.19449859215941
+495,Diversas,./benchmarks/misc/5.1.13.png,0.7,68.56461417579212,DCT,9,809.0864197530864
+496,Diversas,./benchmarks/misc/5.1.13.png,0.8,15.546115242126541,SVD,16,7.984405458089668
+497,Diversas,./benchmarks/misc/5.1.13.png,0.8,62.58768502041583,DCT,16,256.0
+498,Diversas,./benchmarks/misc/5.1.13.png,0.9,7.492530755802639,SVD,31,4.120983462239829
+499,Diversas,./benchmarks/misc/5.1.13.png,0.9,57.20167859233261,DCT,31,68.19562955254943
+500,Diversas,./benchmarks/misc/house.png,0.5,20.73332547918104,SVD,8,31.968780487804878
+501,Diversas,./benchmarks/misc/house.png,0.5,39.20612915872048,DCT,8,4096.0
+502,Diversas,./benchmarks/misc/house.png,0.6,15.027223508086196,SVD,19,13.46053915275995
+503,Diversas,./benchmarks/misc/house.png,0.6,30.159575812937764,DCT,19,726.1606648199446
+504,Diversas,./benchmarks/misc/house.png,0.7,10.696977719832198,SVD,38,6.730269576379975
+505,Diversas,./benchmarks/misc/house.png,0.7,23.773611133792933,DCT,38,181.54016620498615
+506,Diversas,./benchmarks/misc/house.png,0.8,6.893526349827087,SVD,70,3.653574912891986
+507,Diversas,./benchmarks/misc/house.png,0.8,18.813243344921048,DCT,70,53.498775510204084
+508,Diversas,./benchmarks/misc/house.png,0.9,3.376971810423304,SVD,133,1.9229341646799927
+509,Diversas,./benchmarks/misc/house.png,0.9,13.16429232834033,DCT,133,14.819605404488666
+510,Diversas,./benchmarks/misc/texmos3.s512.png,0.5,24.787145810807356,SVD,4,63.937560975609756
+511,Diversas,./benchmarks/misc/texmos3.s512.png,0.5,52.32852668550862,DCT,4,16384.0
+512,Diversas,./benchmarks/misc/texmos3.s512.png,0.6,16.241871048084274,SVD,8,31.968780487804878
+513,Diversas,./benchmarks/misc/texmos3.s512.png,0.6,34.08422623856109,DCT,8,4096.0
+514,Diversas,./benchmarks/misc/texmos3.s512.png,0.7,10.094990831963901,SVD,19,13.46053915275995
+515,Diversas,./benchmarks/misc/texmos3.s512.png,0.7,20.088778779929914,DCT,19,726.1606648199446
+516,Diversas,./benchmarks/misc/texmos3.s512.png,0.8,6.0601225258961895,SVD,48,5.328130081300813
+517,Diversas,./benchmarks/misc/texmos3.s512.png,0.8,12.459862437207185,DCT,48,113.77777777777777
+518,Diversas,./benchmarks/misc/texmos3.s512.png,0.9,3.0421472081919547,SVD,117,2.185899520533667
+519,Diversas,./benchmarks/misc/texmos3.s512.png,0.9,7.863776755479394,DCT,117,19.149974432025715
+520,Diversas,./benchmarks/misc/4.2.06.png,0.5,20.465698373233664,SVD,15,17.0500162601626
+521,Diversas,./benchmarks/misc/4.2.06.png,0.5,37.29145754971625,DCT,15,1165.0844444444444
+522,Diversas,./benchmarks/misc/4.2.06.png,0.6,15.028446079092944,SVD,29,8.818973927670312
+523,Diversas,./benchmarks/misc/4.2.06.png,0.6,28.19951854075674,DCT,29,311.70511296076097
+524,Diversas,./benchmarks/misc/4.2.06.png,0.7,10.453394585457385,SVD,53,4.825476300046019
+525,Diversas,./benchmarks/misc/4.2.06.png,0.7,21.70890376972818,DCT,53,93.32289070843717
+526,Diversas,./benchmarks/misc/4.2.06.png,0.8,6.709350854018431,SVD,94,2.720747275557862
+527,Diversas,./benchmarks/misc/4.2.06.png,0.8,15.72339056463513,DCT,94,29.667722951561792
+528,Diversas,./benchmarks/misc/4.2.06.png,0.9,3.4609838143422196,SVD,179,1.4287723123041287
+529,Diversas,./benchmarks/misc/4.2.06.png,0.9,9.743308816796732,DCT,179,8.181517430791798
+530,Diversas,./benchmarks/misc/7.1.02.png,0.5,19.197644178122612,SVD,1,255.75024390243902
+531,Diversas,./benchmarks/misc/7.1.02.png,0.5,176.72456971155393,DCT,1,262144.0
+532,Diversas,./benchmarks/misc/7.1.02.png,0.6,12.006978044849653,SVD,6,42.625040650406504
+533,Diversas,./benchmarks/misc/7.1.02.png,0.6,17.853059805519358,DCT,6,7281.777777777777
+534,Diversas,./benchmarks/misc/7.1.02.png,0.7,7.42793684868987,SVD,20,12.787512195121952
+535,Diversas,./benchmarks/misc/7.1.02.png,0.7,13.9267193038064,DCT,20,655.36
+536,Diversas,./benchmarks/misc/7.1.02.png,0.8,4.393582437496615,SVD,53,4.825476300046019
+537,Diversas,./benchmarks/misc/7.1.02.png,0.8,9.407432736701251,DCT,53,93.32289070843717
+538,Diversas,./benchmarks/misc/7.1.02.png,0.9,2.206040222255966,SVD,140,1.826787456445993
+539,Diversas,./benchmarks/misc/7.1.02.png,0.9,5.311697740565583,DCT,140,13.374693877551021
+540,Diversas,./benchmarks/misc/4.1.08.png,0.5,28.948687272832704,SVD,2,63.875243664717345
+541,Diversas,./benchmarks/misc/4.1.08.png,0.5,42.9527252883841,DCT,2,16384.0
+542,Diversas,./benchmarks/misc/4.1.08.png,0.6,23.397122043842916,SVD,4,31.937621832358673
+543,Diversas,./benchmarks/misc/4.1.08.png,0.6,36.95949783814151,DCT,4,4096.0
+544,Diversas,./benchmarks/misc/4.1.08.png,0.7,16.242574359649428,SVD,8,15.968810916179336
+545,Diversas,./benchmarks/misc/4.1.08.png,0.7,32.33287656572532,DCT,8,1024.0
+546,Diversas,./benchmarks/misc/4.1.08.png,0.8,9.650307793478564,SVD,15,8.516699155295646
+547,Diversas,./benchmarks/misc/4.1.08.png,0.8,27.29356420873209,DCT,15,291.2711111111111
+548,Diversas,./benchmarks/misc/4.1.08.png,0.9,4.229552485098559,SVD,31,4.120983462239829
+549,Diversas,./benchmarks/misc/4.1.08.png,0.9,14.499044708087329,DCT,31,68.19562955254943
+550,Diversas,./benchmarks/misc/7.1.07.png,0.5,12.00733748627774,SVD,24,10.656260162601626
+551,Diversas,./benchmarks/misc/7.1.07.png,0.5,17.09598732810919,DCT,24,455.1111111111111
+552,Diversas,./benchmarks/misc/7.1.07.png,0.6,9.155595394487358,SVD,47,5.441494551115724
+553,Diversas,./benchmarks/misc/7.1.07.png,0.6,14.335420030103474,DCT,47,118.67089180624717
+554,Diversas,./benchmarks/misc/7.1.07.png,0.7,6.827671321141991,SVD,83,3.081328239788422
+555,Diversas,./benchmarks/misc/7.1.07.png,0.7,11.597249892912838,DCT,83,38.05254753955581
+556,Diversas,./benchmarks/misc/7.1.07.png,0.8,4.697286503881707,SVD,142,1.801058055650979
+557,Diversas,./benchmarks/misc/7.1.07.png,0.8,9.121433501685736,DCT,142,13.00059512001587
+558,Diversas,./benchmarks/misc/7.1.07.png,0.9,2.6488544831876615,SVD,236,1.0836874741628773
+559,Diversas,./benchmarks/misc/7.1.07.png,0.9,6.752604540007919,DCT,236,4.706693478885378
